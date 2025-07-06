@@ -1,0 +1,487 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KoolingSDK
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import Alamofire
+import AppleArchive
+import CoreLocation.CLLocation
+import Combine
+import CoreData
+import CoreLocation
+import CoreMotion
+import Foundation
+import HealthKit
+import Swift
+import SwiftUI
+import System
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct GeneralStatistics : Swift.Codable {
+  public let transportationmode: Swift.Int
+  public let fueltype: Swift.String
+  public let vehicletype: Swift.String
+  @KoolingSDK.To<Swift.Double> public var defraco2emissions: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var kooldrivingpoints: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var absolutepoints: Swift.Double {
+    get
+  }
+  public var points: Swift.Double {
+    get
+  }
+  public var pointsPerKm: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var distance: Swift.Double {
+    get
+  }
+  public var distanceInKM: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var savedco2e: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var ecodrivingscore: Swift.Double {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KoolingSDK.GeneralStatistics {
+  public enum Filter {
+    case month
+    case year
+    case all
+    public static func == (a: KoolingSDK.GeneralStatistics.Filter, b: KoolingSDK.GeneralStatistics.Filter) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Swift.Array where Element == KoolingSDK.GeneralStatistics {
+  public var vehicleStatistics: [KoolingSDK.VehicleStatistics] {
+    get
+  }
+}
+@propertyWrapper public struct To<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible {
+  public let wrappedValue: T
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Vehicle : Swift.Codable, Swift.Hashable {
+  public let vehicletype: Swift.String
+  public let name: Swift.String
+  public let fueltype: Swift.String
+  public let transportationmode: Swift.Int
+  public let icon: Swift.String
+  public let colorname: Swift.String
+  public let minValue: Swift.Double
+  public let maxValue: Swift.Double
+  public let isHighImpact: Swift.Bool
+  public var isLowImpact: Swift.Bool {
+    get
+  }
+  public init(vehicletype: Swift.String, name: Swift.String, fueltype: Swift.String, transportationmode: Swift.Int, icon: Swift.String, colorname: Swift.String, minValue: Swift.Double, maxValue: Swift.Double, isHighImpact: Swift.Bool)
+  public static func == (a: KoolingSDK.Vehicle, b: KoolingSDK.Vehicle) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct TripPreview : Swift.Decodable {
+  public let itinid: Swift.String
+  public let distance: Swift.String
+  public let startdate: Swift.String
+  public let enddate: Swift.String
+  public let defraco2emissions: Swift.String
+  public let absolutepoints: Swift.String
+  public let firstlong: Swift.String?
+  public let firstlat: Swift.String?
+  public let lastlong: Swift.String?
+  public let lastlat: Swift.String?
+  public let transportationmode: Swift.Int
+  public let timestamp: Swift.String?
+  public let vehicletype: Swift.String
+  public let fueltype: Swift.String
+  public let isEnhance: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KoolingSDK.TripPreview {
+  public var trip: KoolingSDK.Trip {
+    get
+  }
+}
+public struct Trip : Swift.Codable {
+  public let itinid: Swift.String?
+  public let vehicletype: Swift.String?
+  public let distance: Swift.String?
+  public let transportationmode: Swift.Int?
+  public let co2benchmarkrating: Swift.Double?
+  public let defraco2emissions: Swift.String?
+  public let ecodrivingscore: Swift.String?
+  public let defraconversionfactor: Swift.String?
+  public let firstlat: Swift.String?
+  public let firstlong: Swift.String?
+  public let fueltype: Swift.String?
+  public let kooldrivingpoints: Swift.String?
+  public let kooldrivingpointsperkm: Swift.String?
+  public let lastlat: Swift.String?
+  public let lastlong: Swift.String?
+  public let month: Swift.Int?
+  public let points: Swift.String?
+  public let absolutepoints: Swift.String?
+  public let absolutepointsperkm: Swift.String?
+  public let startdate: Swift.String?
+  public let enddate: Swift.String?
+  public let timestamp: Swift.String?
+  public let year: Swift.Int?
+  public let week: Swift.Int?
+  public let is_enhance: Swift.Bool?
+  public let other_trip_vehicle_name: Swift.String?
+  public let gpx: Swift.String?
+  public init(itinid: Swift.String?, vehicletype: Swift.String?, distance: Swift.String?, transportationmode: Swift.Int?, co2benchmarkrating: Swift.Double?, defraco2emissions: Swift.String?, ecodrivingscore: Swift.String?, defraconversionfactor: Swift.String?, firstlat: Swift.String?, firstlong: Swift.String?, fueltype: Swift.String?, kooldrivingpoints: Swift.String?, kooldrivingpointsperkm: Swift.String?, lastlat: Swift.String?, lastlong: Swift.String?, month: Swift.Int?, points: Swift.String?, absolutepoints: Swift.String?, absolutepointsperkm: Swift.String?, startdate: Swift.String?, enddate: Swift.String?, timestamp: Swift.String?, year: Swift.Int?, week: Swift.Int?, is_enhance: Swift.Bool?, other_trip_vehicle_name: Swift.String?, gpx: Swift.String?)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KoolingSDK.Trip {
+  public func isMatchingDay(with date: Foundation.Date) -> Swift.Bool
+  public func isMatchingMonth(with date: Foundation.Date) -> Swift.Bool
+  public func isMatchingYear(with date: Foundation.Date) -> Swift.Bool
+  public var vehicle: KoolingSDK.Vehicle? {
+    get
+  }
+  public var pointsPerKm: Swift.Double {
+    get
+  }
+  public var startDateTime: Foundation.Date? {
+    get
+  }
+  public var endDateTime: Foundation.Date? {
+    get
+  }
+  public var timestampDateTime: Foundation.Date? {
+    get
+  }
+  public var defraco2emissionsInDouble: Swift.Double {
+    get
+  }
+  public var absolutePointsDouble: Swift.Double {
+    get
+  }
+  public var pointsDouble: Swift.Double {
+    get
+  }
+  public var isHighImpact: Swift.Bool {
+    get
+  }
+  public var isCurrentMonth: Swift.Bool {
+    get
+  }
+  public var isCurrentYear: Swift.Bool {
+    get
+  }
+  public var isCurrentWeek: Swift.Bool {
+    get
+  }
+  public var distanceInKM: Swift.Double {
+    get
+  }
+  public var savedCo2e: Swift.Double {
+    get
+  }
+  public var koolDrivingPointsDouble: Swift.Double {
+    get
+  }
+  public var co2eEmission: Swift.Double {
+    get
+  }
+  public var ecoDrivingScoreDouble: Swift.Double {
+    get
+  }
+  public var defraConversionFactorDouble: Swift.Double {
+    get
+  }
+  public var isTripByCar: Swift.Bool {
+    get
+  }
+  public var isWalking: Swift.Bool {
+    get
+  }
+  public var isBestChoice: Swift.Bool {
+    get
+  }
+}
+public struct KoolingConfiguration {
+  public let accessToken: Swift.String
+  public let environment: KoolingSDK.KoolingEnvironment
+  public init(accessToken: Swift.String, environment: KoolingSDK.KoolingEnvironment)
+}
+public enum KoolingEnvironment : Swift.CaseIterable {
+  case production
+  case staging
+  public static func == (a: KoolingSDK.KoolingEnvironment, b: KoolingSDK.KoolingEnvironment) -> Swift.Bool
+  public typealias AllCases = [KoolingSDK.KoolingEnvironment]
+  nonisolated public static var allCases: [KoolingSDK.KoolingEnvironment] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct TripFilters {
+  public let transportationMode: Swift.Int?
+  public let vehicleType: Swift.String?
+  public let fuelType: Swift.String?
+  public let week: Swift.Int?
+  public let month: Swift.Int?
+  public let year: Swift.Int?
+  public let pageSize: Swift.Int?
+  public let cursor: Swift.String?
+  public init(transportationMode: Swift.Int? = nil, vehicleType: Swift.String? = nil, fuelType: Swift.String? = nil, week: Swift.Int? = nil, month: Swift.Int? = nil, year: Swift.Int? = nil, pageSize: Swift.Int? = nil, cursor: Swift.String? = nil)
+}
+public enum KoolingSDKError : Foundation.LocalizedError {
+  case notConfigured
+  case invalidConfiguration
+  case invalidAccessToken
+  case networkUnavailable
+  case permissionDenied
+  case trackingAlreadyActive
+  case trackingNotActive
+  case serviceUnavailable
+  case invalidTripId
+  case invalidPageSize
+  case unknown(any Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class KoolingSDKManager {
+  public static let shared: KoolingSDK.KoolingSDKManager
+  final public var isConfigured: Swift.Bool {
+    get
+  }
+  final public var isTracking: Swift.Bool {
+    get
+  }
+  final public var environment: KoolingSDK.KoolingEnvironment? {
+    get
+  }
+  final public func configure(with configuration: KoolingSDK.KoolingConfiguration) throws
+  final public func startTracking(from viewController: UIKit.UIViewController? = nil) throws
+  final public func stopTracking() throws
+  final public func getTrips(pageSize: Swift.Int = 20) async throws -> [KoolingSDK.TripPreview]
+  final public func getTrips(with filters: KoolingSDK.TripFilters) async throws -> [KoolingSDK.TripPreview]
+  final public func getTrip(id tripId: Swift.String) async throws -> KoolingSDK.Trip
+  final public func getStatistics(for filter: KoolingSDK.GeneralStatistics.Filter) async throws -> [KoolingSDK.GeneralStatistics]
+  @objc deinit
+}
+public struct VehicleStatistics {
+  public let vehicle: KoolingSDK.Vehicle
+  public let statistics: KoolingSDK.GeneralStatistics
+  public init(vehicle: KoolingSDK.Vehicle, statistics: KoolingSDK.GeneralStatistics)
+  public static func from(statistics: [KoolingSDK.GeneralStatistics]) -> [KoolingSDK.VehicleStatistics]
+}
+extension Swift.Array where Element == KoolingSDK.VehicleStatistics {
+  public init(statistics: [KoolingSDK.GeneralStatistics])
+  public var lowImpact: [KoolingSDK.VehicleStatistics] {
+    get
+  }
+  public var highImpact: [KoolingSDK.VehicleStatistics] {
+    get
+  }
+  public var totalDistanceKM: Swift.Double {
+    get
+  }
+  public var lowImpactTripsDistanceKM: Swift.Double {
+    get
+  }
+  public var highImpactTripsDistanceKM: Swift.Double {
+    get
+  }
+  public var totalDefraco2emissions: Swift.Double {
+    get
+  }
+  public var lowImpactTripsDefraco2emissions: Swift.Double {
+    get
+  }
+  public var highImpactTripsDefraco2emissions: Swift.Double {
+    get
+  }
+  public var savedCO2FromLowImpactTrips: Swift.Double {
+    get
+  }
+  public var lowImpactPoints: Swift.Double {
+    get
+  }
+  public var totalDrivingsPoints: Swift.Double {
+    get
+  }
+  public var highImpactDrivingsPoints: Swift.Double {
+    get
+  }
+  public var totalCo2emission: Swift.Double {
+    get
+  }
+  public var drivingScore: Swift.Double {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(LocationEntityOld) public class LocationEntityOld : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension KoolingSDK.LocationEntityOld {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<KoolingSDK.LocationEntityOld>
+  @objc @NSManaged dynamic public var accuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var altitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var bluetooth: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var coarse: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Foundation.UUID? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isSubmitted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var motiontype: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var speed: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var steps: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+}
+extension KoolingSDK.LocationEntityOld : Swift.Identifiable {
+  public typealias ID = Foundation.UUID?
+}
+@_inheritsConvenienceInitializers @objc(LocationEntity) public class LocationEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension KoolingSDK.LocationEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<KoolingSDK.LocationEntity>
+  @objc @NSManaged dynamic public var accuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var activityType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var altitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var bluetooth: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var coarse: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var speed: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+}
+extension KoolingSDK.LocationEntity : Swift.Identifiable {
+  public typealias ID = Swift.String?
+}
+@_inheritsConvenienceInitializers @objc(StepsAndDistanceEntity) public class StepsAndDistanceEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension KoolingSDK.StepsAndDistanceEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<KoolingSDK.StepsAndDistanceEntity>
+  @objc @NSManaged dynamic public var creationDate: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var steps: Swift.Double {
+    @objc get
+    @objc set
+  }
+}
+extension KoolingSDK.StepsAndDistanceEntity : Swift.Identifiable {
+  public typealias ID = Swift.String?
+}
+extension KoolingSDK.GeneralStatistics.Filter : Swift.Equatable {}
+extension KoolingSDK.GeneralStatistics.Filter : Swift.Hashable {}
+extension KoolingSDK.KoolingEnvironment : Swift.Equatable {}
+extension KoolingSDK.KoolingEnvironment : Swift.Hashable {}
