@@ -22,7 +22,7 @@ Add KoolingSDK to your project using Swift Package Manager:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/shinnguyen5589/KoolingSDK.git", from: "1.0.2")
+    .package(url: "https://github.com/shinnguyen5589/KoolingSDK.git", from: "1.0.0")
 ]
 ```
 
