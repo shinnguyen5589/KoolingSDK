@@ -34,22 +34,23 @@ KoolingSDK requires the following dependencies:
 
 ### Manual Installation
 
-1. Download the latest KoolingSDK.framework from releases
-2. Drag and drop the framework into your Xcode project
-3. Add the framework to your target's "Frameworks, Libraries, and Embedded Content"
-4. **Important**: Set the framework to **"Do Not Embed"** (see Framework Configuration below)
+1. Download the latest **KoolingSDK.framework** from releases
+2. Download the latest **Alamofire.xcframework** from releases
+3. Drag and drop both frameworks into your Xcode project
+4. Add both frameworks to your target's "Frameworks, Libraries, and Embedded Content"
+5. **Important**: Set both frameworks to **"Do Not Embed"** (see Framework Configuration below)
 
 ### Swift Package Manager
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-org/KoolingSDK.git", from: "1.0.0")
+    .package(url: "https://github.com/shinnguyen5589/KoolingSDK.git", from: "1.0.0")
 ]
 ```
 
 ## Framework Configuration
 
-After adding the frameworks to your project, you need to configure them properly:
+After adding both frameworks to your project, you need to configure them properly:
 
 ### 1. In Xcode Project Navigator:
 
@@ -75,11 +76,11 @@ Set both frameworks to **"Do Not Embed"**:
 | **Embed & Sign** | Dynamic framework that needs to be copied to app bundle | ❌ Don't use |
 | **Embed Without Signing** | Dynamic framework, manual signing | ❌ Don't use |
 
-### 4. Why "Do Not Embed" for KoolingSDK?
+### 4. Why "Do Not Embed" for Both Frameworks?
 
-- ✅ **Static Linking**: KoolingSDK is designed to be statically linked
-- ✅ **Alamofire Included**: Alamofire is already bundled within KoolingSDK
-- ✅ **Smaller App Size**: No framework duplication in final app bundle
+- ✅ **Static Linking**: Both frameworks are designed to be statically linked
+- ✅ **Separate Dependencies**: Alamofire is a required dependency for KoolingSDK
+- ✅ **Smaller App Size**: Static linking reduces final app bundle size
 - ✅ **Faster Launch**: No dynamic loading overhead
 - ❌ **Avoid "Embed & Sign"**: Would cause duplicate symbols and linker errors
 
@@ -102,8 +103,9 @@ iOS Deployment Target: 15.0
 Before using KoolingSDK, make sure you have completed:
 
 ### Framework Setup:
-- [ ] ✅ Added KoolingSDK.xcframework to project
-- [ ] ✅ Added Alamofire.xcframework to project  
+- [ ] ✅ Downloaded KoolingSDK.framework from releases
+- [ ] ✅ Downloaded Alamofire.xcframework from releases
+- [ ] ✅ Added both frameworks to project
 - [ ] ✅ Set both frameworks to **"Do Not Embed"**
 - [ ] ✅ Set iOS Deployment Target to **15.0+**
 
