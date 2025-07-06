@@ -15,1998 +15,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreMotion",
-        "printedName": "CoreMotion",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "GeneralStatistics",
-        "printedName": "GeneralStatistics",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "transportationmode",
-            "printedName": "transportationmode",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV18transportationmodeSivp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV18transportationmodeSivp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV18transportationmodeSivg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV18transportationmodeSivg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "fueltype",
-            "printedName": "fueltype",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV8fueltypeSSvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV8fueltypeSSvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV8fueltypeSSvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV8fueltypeSSvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "vehicletype",
-            "printedName": "vehicletype",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV11vehicletypeSSvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV11vehicletypeSSvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV11vehicletypeSSvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV11vehicletypeSSvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "defraco2emissions",
-            "printedName": "defraco2emissions",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV17defraco2emissionsSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV17defraco2emissionsSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV17defraco2emissionsSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV17defraco2emissionsSdvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "kooldrivingpoints",
-            "printedName": "kooldrivingpoints",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV17kooldrivingpointsSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV17kooldrivingpointsSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV17kooldrivingpointsSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV17kooldrivingpointsSdvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "absolutepoints",
-            "printedName": "absolutepoints",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV14absolutepointsSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV14absolutepointsSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV14absolutepointsSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV14absolutepointsSdvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "points",
-            "printedName": "points",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV6pointsSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV6pointsSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV6pointsSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6pointsSdvg",
-                "moduleName": "KoolingSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "pointsPerKm",
-            "printedName": "pointsPerKm",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV11pointsPerKmSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV11pointsPerKmSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV11pointsPerKmSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV11pointsPerKmSdvg",
-                "moduleName": "KoolingSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "distance",
-            "printedName": "distance",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV8distanceSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV8distanceSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV8distanceSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV8distanceSdvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "distanceInKM",
-            "printedName": "distanceInKM",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV12distanceInKMSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV12distanceInKMSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV12distanceInKMSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV12distanceInKMSdvg",
-                "moduleName": "KoolingSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "savedco2e",
-            "printedName": "savedco2e",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV9savedco2eSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV9savedco2eSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV9savedco2eSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV9savedco2eSdvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "ecodrivingscore",
-            "printedName": "ecodrivingscore",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV15ecodrivingscoreSdvp",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV15ecodrivingscoreSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV15ecodrivingscoreSdvg",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV15ecodrivingscoreSdvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GeneralStatistics",
-                "printedName": "KoolingSDK.GeneralStatistics",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "KoolingSDK",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV6encode2toys7Encoder_p_tKF",
-            "moduleName": "KoolingSDK",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "Filter",
-            "printedName": "Filter",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "month",
-                "printedName": "month",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KoolingSDK.GeneralStatistics.Filter.Type) -> KoolingSDK.GeneralStatistics.Filter",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Filter",
-                        "printedName": "KoolingSDK.GeneralStatistics.Filter",
-                        "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "KoolingSDK.GeneralStatistics.Filter.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Filter",
-                            "printedName": "KoolingSDK.GeneralStatistics.Filter",
-                            "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO5monthyA2EmF",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO5monthyA2EmF",
-                "moduleName": "KoolingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "year",
-                "printedName": "year",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KoolingSDK.GeneralStatistics.Filter.Type) -> KoolingSDK.GeneralStatistics.Filter",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Filter",
-                        "printedName": "KoolingSDK.GeneralStatistics.Filter",
-                        "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "KoolingSDK.GeneralStatistics.Filter.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Filter",
-                            "printedName": "KoolingSDK.GeneralStatistics.Filter",
-                            "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO4yearyA2EmF",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO4yearyA2EmF",
-                "moduleName": "KoolingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "all",
-                "printedName": "all",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(KoolingSDK.GeneralStatistics.Filter.Type) -> KoolingSDK.GeneralStatistics.Filter",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Filter",
-                        "printedName": "KoolingSDK.GeneralStatistics.Filter",
-                        "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "KoolingSDK.GeneralStatistics.Filter.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Filter",
-                            "printedName": "KoolingSDK.GeneralStatistics.Filter",
-                            "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO3allyA2EmF",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO3allyA2EmF",
-                "moduleName": "KoolingSDK"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Filter",
-                    "printedName": "KoolingSDK.GeneralStatistics.Filter",
-                    "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Filter",
-                    "printedName": "KoolingSDK.GeneralStatistics.Filter",
-                    "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO2eeoiySbAE_AEtFZ",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO2eeoiySbAE_AEtFZ",
-                "moduleName": "KoolingSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Var",
-                "name": "hashValue",
-                "printedName": "hashValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO9hashValueSivp",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO9hashValueSivp",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO9hashValueSivg",
-                    "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO9hashValueSivg",
-                    "moduleName": "KoolingSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Function",
-                "name": "hash",
-                "printedName": "hash(into:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Hasher",
-                    "printedName": "Swift.Hasher",
-                    "paramValueOwnership": "InOut",
-                    "usr": "s:s6HasherV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO4hash4intoys6HasherVz_tF",
-                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO4hash4intoys6HasherVz_tF",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO",
-            "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO",
-            "moduleName": "KoolingSDK",
-            "isFromExtension": true,
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10KoolingSDK17GeneralStatisticsV",
-        "mangledName": "$s10KoolingSDK17GeneralStatisticsV",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "To",
-        "printedName": "To",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "wrappedValue",
-            "printedName": "wrappedValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK2ToV12wrappedValuexvp",
-            "mangledName": "$s10KoolingSDK2ToV12wrappedValuexvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK2ToV12wrappedValuexvg",
-                "mangledName": "$s10KoolingSDK2ToV12wrappedValuexvg",
-                "moduleName": "KoolingSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.LosslessStringConvertible>",
-                "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible>",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "To",
-                "printedName": "KoolingSDK.To<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:10KoolingSDK2ToV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10KoolingSDK2ToV4fromACyxGs7Decoder_p_tKcfc",
-            "mangledName": "$s10KoolingSDK2ToV4fromACyxGs7Decoder_p_tKcfc",
-            "moduleName": "KoolingSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.LosslessStringConvertible>",
-            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10KoolingSDK2ToV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s10KoolingSDK2ToV6encode2toys7Encoder_p_tKF",
-            "moduleName": "KoolingSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.LosslessStringConvertible>",
-            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10KoolingSDK2ToV",
-        "mangledName": "$s10KoolingSDK2ToV",
-        "moduleName": "KoolingSDK",
-        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.LosslessStringConvertible>",
-        "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible>",
-        "declAttributes": [
-          "AccessControl",
-          "PropertyWrapper"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Vehicle",
-        "printedName": "Vehicle",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "vehicletype",
-            "printedName": "vehicletype",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV11vehicletypeSSvp",
-            "mangledName": "$s10KoolingSDK7VehicleV11vehicletypeSSvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV11vehicletypeSSvg",
-                "mangledName": "$s10KoolingSDK7VehicleV11vehicletypeSSvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV4nameSSvp",
-            "mangledName": "$s10KoolingSDK7VehicleV4nameSSvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV4nameSSvg",
-                "mangledName": "$s10KoolingSDK7VehicleV4nameSSvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "fueltype",
-            "printedName": "fueltype",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV8fueltypeSSvp",
-            "mangledName": "$s10KoolingSDK7VehicleV8fueltypeSSvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV8fueltypeSSvg",
-                "mangledName": "$s10KoolingSDK7VehicleV8fueltypeSSvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "transportationmode",
-            "printedName": "transportationmode",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV18transportationmodeSivp",
-            "mangledName": "$s10KoolingSDK7VehicleV18transportationmodeSivp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV18transportationmodeSivg",
-                "mangledName": "$s10KoolingSDK7VehicleV18transportationmodeSivg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "icon",
-            "printedName": "icon",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV4iconSSvp",
-            "mangledName": "$s10KoolingSDK7VehicleV4iconSSvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV4iconSSvg",
-                "mangledName": "$s10KoolingSDK7VehicleV4iconSSvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "colorname",
-            "printedName": "colorname",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV9colornameSSvp",
-            "mangledName": "$s10KoolingSDK7VehicleV9colornameSSvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV9colornameSSvg",
-                "mangledName": "$s10KoolingSDK7VehicleV9colornameSSvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "minValue",
-            "printedName": "minValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV8minValueSdvp",
-            "mangledName": "$s10KoolingSDK7VehicleV8minValueSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV8minValueSdvg",
-                "mangledName": "$s10KoolingSDK7VehicleV8minValueSdvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "maxValue",
-            "printedName": "maxValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV8maxValueSdvp",
-            "mangledName": "$s10KoolingSDK7VehicleV8maxValueSdvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV8maxValueSdvg",
-                "mangledName": "$s10KoolingSDK7VehicleV8maxValueSdvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isHighImpact",
-            "printedName": "isHighImpact",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV12isHighImpactSbvp",
-            "mangledName": "$s10KoolingSDK7VehicleV12isHighImpactSbvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV12isHighImpactSbvg",
-                "mangledName": "$s10KoolingSDK7VehicleV12isHighImpactSbvg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isLowImpact",
-            "printedName": "isLowImpact",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV11isLowImpactSbvp",
-            "mangledName": "$s10KoolingSDK7VehicleV11isLowImpactSbvp",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV11isLowImpactSbvg",
-                "mangledName": "$s10KoolingSDK7VehicleV11isLowImpactSbvg",
-                "moduleName": "KoolingSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(vehicletype:name:fueltype:transportationmode:icon:colorname:minValue:maxValue:isHighImpact:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Vehicle",
-                "printedName": "KoolingSDK.Vehicle",
-                "usr": "s:10KoolingSDK7VehicleV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10KoolingSDK7VehicleV11vehicletype4name8fueltype18transportationmode4icon9colorname8minValue03maxK012isHighImpactACSS_S2SSiS2SS2dSbtcfc",
-            "mangledName": "$s10KoolingSDK7VehicleV11vehicletype4name8fueltype18transportationmode4icon9colorname8minValue03maxK012isHighImpactACSS_S2SSiS2SS2dSbtcfc",
-            "moduleName": "KoolingSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Vehicle",
-                "printedName": "KoolingSDK.Vehicle",
-                "usr": "s:10KoolingSDK7VehicleV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10KoolingSDK7VehicleV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s10KoolingSDK7VehicleV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "KoolingSDK",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10KoolingSDK7VehicleV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s10KoolingSDK7VehicleV6encode2toys7Encoder_p_tKF",
-            "moduleName": "KoolingSDK",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10KoolingSDK7VehicleV9hashValueSivp",
-            "mangledName": "$s10KoolingSDK7VehicleV9hashValueSivp",
-            "moduleName": "KoolingSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10KoolingSDK7VehicleV9hashValueSivg",
-                "mangledName": "$s10KoolingSDK7VehicleV9hashValueSivg",
-                "moduleName": "KoolingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10KoolingSDK7VehicleV4hash4intoys6HasherVz_tF",
-            "mangledName": "$s10KoolingSDK7VehicleV4hash4intoys6HasherVz_tF",
-            "moduleName": "KoolingSDK",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Vehicle",
-                "printedName": "KoolingSDK.Vehicle",
-                "usr": "s:10KoolingSDK7VehicleV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Vehicle",
-                "printedName": "KoolingSDK.Vehicle",
-                "usr": "s:10KoolingSDK7VehicleV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10KoolingSDK7VehicleV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s10KoolingSDK7VehicleV2eeoiySbAC_ACtFZ",
-            "moduleName": "KoolingSDK",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10KoolingSDK7VehicleV",
-        "mangledName": "$s10KoolingSDK7VehicleV",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreMotion",
-        "printedName": "CoreMotion",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UserNotifications",
-        "printedName": "UserNotifications",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "TripPreview",
         "printedName": "TripPreview",
@@ -2857,27 +865,10 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "KoolingSDK"
       },
       {
         "kind": "Import",
@@ -2888,8 +879,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CoreData",
+        "printedName": "CoreData",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -2905,20 +896,10 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -2949,8 +930,105 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -2987,6 +1065,110 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
       },
       {
         "kind": "Import",
@@ -3011,13 +1193,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3025,41 +1200,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
       },
       {
         "kind": "Import",
@@ -3086,89 +1226,6 @@
         "kind": "Import",
         "name": "CoreMotion",
         "printedName": "CoreMotion",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -6253,8 +4310,50 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AppleArchive",
+        "printedName": "AppleArchive",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "System",
+        "printedName": "System",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -6267,6 +4366,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
         "declKind": "Import",
@@ -6274,8 +4380,25 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -6298,27 +4421,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "KoolingSDK",
         "declAttributes": [
           "RawDocComment"
@@ -6326,6 +4428,13 @@
       },
       {
         "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6333,8 +4442,22 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -8528,6 +6651,27 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "KoolingSDK",
         "declAttributes": [
           "RawDocComment"
@@ -8535,8 +6679,8 @@
       },
       {
         "kind": "Import",
-        "name": "Alamofire",
-        "printedName": "Alamofire",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -8545,40 +6689,15 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "KoolingSDK"
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "AppleArchive",
-        "printedName": "AppleArchive",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "System",
-        "printedName": "System",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -8591,8 +6710,908 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GeneralStatistics",
+        "printedName": "GeneralStatistics",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "transportationmode",
+            "printedName": "transportationmode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV18transportationmodeSivp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV18transportationmodeSivp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV18transportationmodeSivg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV18transportationmodeSivg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fueltype",
+            "printedName": "fueltype",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV8fueltypeSSvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV8fueltypeSSvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV8fueltypeSSvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV8fueltypeSSvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vehicletype",
+            "printedName": "vehicletype",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV11vehicletypeSSvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV11vehicletypeSSvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV11vehicletypeSSvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV11vehicletypeSSvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "defraco2emissions",
+            "printedName": "defraco2emissions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV17defraco2emissionsSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV17defraco2emissionsSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV17defraco2emissionsSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV17defraco2emissionsSdvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kooldrivingpoints",
+            "printedName": "kooldrivingpoints",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV17kooldrivingpointsSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV17kooldrivingpointsSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV17kooldrivingpointsSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV17kooldrivingpointsSdvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "absolutepoints",
+            "printedName": "absolutepoints",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV14absolutepointsSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV14absolutepointsSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV14absolutepointsSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV14absolutepointsSdvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "points",
+            "printedName": "points",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV6pointsSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV6pointsSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV6pointsSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6pointsSdvg",
+                "moduleName": "KoolingSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pointsPerKm",
+            "printedName": "pointsPerKm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV11pointsPerKmSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV11pointsPerKmSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV11pointsPerKmSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV11pointsPerKmSdvg",
+                "moduleName": "KoolingSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "distance",
+            "printedName": "distance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV8distanceSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV8distanceSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV8distanceSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV8distanceSdvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "distanceInKM",
+            "printedName": "distanceInKM",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV12distanceInKMSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV12distanceInKMSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV12distanceInKMSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV12distanceInKMSdvg",
+                "moduleName": "KoolingSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "savedco2e",
+            "printedName": "savedco2e",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV9savedco2eSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV9savedco2eSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV9savedco2eSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV9savedco2eSdvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ecodrivingscore",
+            "printedName": "ecodrivingscore",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV15ecodrivingscoreSdvp",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV15ecodrivingscoreSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV15ecodrivingscoreSdvg",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV15ecodrivingscoreSdvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GeneralStatistics",
+                "printedName": "KoolingSDK.GeneralStatistics",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KoolingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KoolingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Filter",
+            "printedName": "Filter",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "month",
+                "printedName": "month",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KoolingSDK.GeneralStatistics.Filter.Type) -> KoolingSDK.GeneralStatistics.Filter",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Filter",
+                        "printedName": "KoolingSDK.GeneralStatistics.Filter",
+                        "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KoolingSDK.GeneralStatistics.Filter.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Filter",
+                            "printedName": "KoolingSDK.GeneralStatistics.Filter",
+                            "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO5monthyA2EmF",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO5monthyA2EmF",
+                "moduleName": "KoolingSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "year",
+                "printedName": "year",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KoolingSDK.GeneralStatistics.Filter.Type) -> KoolingSDK.GeneralStatistics.Filter",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Filter",
+                        "printedName": "KoolingSDK.GeneralStatistics.Filter",
+                        "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KoolingSDK.GeneralStatistics.Filter.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Filter",
+                            "printedName": "KoolingSDK.GeneralStatistics.Filter",
+                            "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO4yearyA2EmF",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO4yearyA2EmF",
+                "moduleName": "KoolingSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "all",
+                "printedName": "all",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KoolingSDK.GeneralStatistics.Filter.Type) -> KoolingSDK.GeneralStatistics.Filter",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Filter",
+                        "printedName": "KoolingSDK.GeneralStatistics.Filter",
+                        "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KoolingSDK.GeneralStatistics.Filter.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Filter",
+                            "printedName": "KoolingSDK.GeneralStatistics.Filter",
+                            "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO3allyA2EmF",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO3allyA2EmF",
+                "moduleName": "KoolingSDK"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Filter",
+                    "printedName": "KoolingSDK.GeneralStatistics.Filter",
+                    "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Filter",
+                    "printedName": "KoolingSDK.GeneralStatistics.Filter",
+                    "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO2eeoiySbAE_AEtFZ",
+                "moduleName": "KoolingSDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO9hashValueSivp",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO9hashValueSivp",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO9hashValueSivg",
+                    "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO9hashValueSivg",
+                    "moduleName": "KoolingSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO4hash4intoys6HasherVz_tF",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10KoolingSDK17GeneralStatisticsV6FilterO",
+            "mangledName": "$s10KoolingSDK17GeneralStatisticsV6FilterO",
+            "moduleName": "KoolingSDK",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10KoolingSDK17GeneralStatisticsV",
+        "mangledName": "$s10KoolingSDK17GeneralStatisticsV",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -8600,6 +7619,65 @@
         "kind": "Import",
         "name": "CoreMotion",
         "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -8810,13 +7888,6 @@
       },
       {
         "kind": "Import",
-        "name": "HealthKit",
-        "printedName": "HealthKit",
-        "declKind": "Import",
-        "moduleName": "KoolingSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8831,6 +7902,27 @@
       },
       {
         "kind": "Import",
+        "name": "HealthKit",
+        "printedName": "HealthKit",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8840,9 +7932,917 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "To",
+        "printedName": "To",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "wrappedValue",
+            "printedName": "wrappedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK2ToV12wrappedValuexvp",
+            "mangledName": "$s10KoolingSDK2ToV12wrappedValuexvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK2ToV12wrappedValuexvg",
+                "mangledName": "$s10KoolingSDK2ToV12wrappedValuexvg",
+                "moduleName": "KoolingSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.LosslessStringConvertible>",
+                "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "To",
+                "printedName": "KoolingSDK.To<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:10KoolingSDK2ToV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10KoolingSDK2ToV4fromACyxGs7Decoder_p_tKcfc",
+            "mangledName": "$s10KoolingSDK2ToV4fromACyxGs7Decoder_p_tKcfc",
+            "moduleName": "KoolingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.LosslessStringConvertible>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KoolingSDK2ToV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10KoolingSDK2ToV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KoolingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.LosslessStringConvertible>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10KoolingSDK2ToV",
+        "mangledName": "$s10KoolingSDK2ToV",
+        "moduleName": "KoolingSDK",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable, τ_0_0 : Swift.LosslessStringConvertible>",
+        "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible>",
+        "declAttributes": [
+          "AccessControl",
+          "PropertyWrapper"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Vehicle",
+        "printedName": "Vehicle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "vehicletype",
+            "printedName": "vehicletype",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV11vehicletypeSSvp",
+            "mangledName": "$s10KoolingSDK7VehicleV11vehicletypeSSvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV11vehicletypeSSvg",
+                "mangledName": "$s10KoolingSDK7VehicleV11vehicletypeSSvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV4nameSSvp",
+            "mangledName": "$s10KoolingSDK7VehicleV4nameSSvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV4nameSSvg",
+                "mangledName": "$s10KoolingSDK7VehicleV4nameSSvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fueltype",
+            "printedName": "fueltype",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV8fueltypeSSvp",
+            "mangledName": "$s10KoolingSDK7VehicleV8fueltypeSSvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV8fueltypeSSvg",
+                "mangledName": "$s10KoolingSDK7VehicleV8fueltypeSSvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "transportationmode",
+            "printedName": "transportationmode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV18transportationmodeSivp",
+            "mangledName": "$s10KoolingSDK7VehicleV18transportationmodeSivp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV18transportationmodeSivg",
+                "mangledName": "$s10KoolingSDK7VehicleV18transportationmodeSivg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "icon",
+            "printedName": "icon",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV4iconSSvp",
+            "mangledName": "$s10KoolingSDK7VehicleV4iconSSvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV4iconSSvg",
+                "mangledName": "$s10KoolingSDK7VehicleV4iconSSvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "colorname",
+            "printedName": "colorname",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV9colornameSSvp",
+            "mangledName": "$s10KoolingSDK7VehicleV9colornameSSvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV9colornameSSvg",
+                "mangledName": "$s10KoolingSDK7VehicleV9colornameSSvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minValue",
+            "printedName": "minValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV8minValueSdvp",
+            "mangledName": "$s10KoolingSDK7VehicleV8minValueSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV8minValueSdvg",
+                "mangledName": "$s10KoolingSDK7VehicleV8minValueSdvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxValue",
+            "printedName": "maxValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV8maxValueSdvp",
+            "mangledName": "$s10KoolingSDK7VehicleV8maxValueSdvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV8maxValueSdvg",
+                "mangledName": "$s10KoolingSDK7VehicleV8maxValueSdvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isHighImpact",
+            "printedName": "isHighImpact",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV12isHighImpactSbvp",
+            "mangledName": "$s10KoolingSDK7VehicleV12isHighImpactSbvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV12isHighImpactSbvg",
+                "mangledName": "$s10KoolingSDK7VehicleV12isHighImpactSbvg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLowImpact",
+            "printedName": "isLowImpact",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV11isLowImpactSbvp",
+            "mangledName": "$s10KoolingSDK7VehicleV11isLowImpactSbvp",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV11isLowImpactSbvg",
+                "mangledName": "$s10KoolingSDK7VehicleV11isLowImpactSbvg",
+                "moduleName": "KoolingSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(vehicletype:name:fueltype:transportationmode:icon:colorname:minValue:maxValue:isHighImpact:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Vehicle",
+                "printedName": "KoolingSDK.Vehicle",
+                "usr": "s:10KoolingSDK7VehicleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10KoolingSDK7VehicleV11vehicletype4name8fueltype18transportationmode4icon9colorname8minValue03maxK012isHighImpactACSS_S2SSiS2SS2dSbtcfc",
+            "mangledName": "$s10KoolingSDK7VehicleV11vehicletype4name8fueltype18transportationmode4icon9colorname8minValue03maxK012isHighImpactACSS_S2SSiS2SS2dSbtcfc",
+            "moduleName": "KoolingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Vehicle",
+                "printedName": "KoolingSDK.Vehicle",
+                "usr": "s:10KoolingSDK7VehicleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10KoolingSDK7VehicleV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10KoolingSDK7VehicleV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KoolingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KoolingSDK7VehicleV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10KoolingSDK7VehicleV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KoolingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10KoolingSDK7VehicleV9hashValueSivp",
+            "mangledName": "$s10KoolingSDK7VehicleV9hashValueSivp",
+            "moduleName": "KoolingSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10KoolingSDK7VehicleV9hashValueSivg",
+                "mangledName": "$s10KoolingSDK7VehicleV9hashValueSivg",
+                "moduleName": "KoolingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KoolingSDK7VehicleV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10KoolingSDK7VehicleV4hash4intoys6HasherVz_tF",
+            "moduleName": "KoolingSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Vehicle",
+                "printedName": "KoolingSDK.Vehicle",
+                "usr": "s:10KoolingSDK7VehicleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Vehicle",
+                "printedName": "KoolingSDK.Vehicle",
+                "usr": "s:10KoolingSDK7VehicleV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10KoolingSDK7VehicleV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10KoolingSDK7VehicleV2eeoiySbAC_ACtFZ",
+            "moduleName": "KoolingSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10KoolingSDK7VehicleV",
+        "mangledName": "$s10KoolingSDK7VehicleV",
+        "moduleName": "KoolingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KoolingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KoolingSDK"
       },
@@ -13469,480 +13469,11 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4372,
-      "length": 23,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ss\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4428,
-      "length": 21,
-      "value": "\"yyyy-MM-dd HH:mm:ss\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4490,
-      "length": 27,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4566,
-      "length": 25,
-      "value": "\"yyyy-MM-dd HH:mm:ss.SSS\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4621,
-      "length": 28,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4672,
-      "length": 7,
-      "value": "\"HH:mm\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4698,
-      "length": 9,
-      "value": "\"yyyy-MM\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4728,
-      "length": 12,
-      "value": "\"yyyy-MM-dd\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4761,
-      "length": 12,
-      "value": "\"EEE dd MMM\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4790,
-      "length": 6,
-      "value": "\"yyyy\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4814,
-      "length": 8,
-      "value": "\"dd MMM\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4842,
-      "length": 10,
-      "value": "\"MMM yyyy\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4868,
-      "length": 5,
-      "value": "\"EEE\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4889,
-      "length": 5,
-      "value": "\"MMM\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4912,
-      "length": 4,
-      "value": "\"dd\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4937,
-      "length": 12,
-      "value": "\"MM-dd-yyyy\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 4971,
-      "length": 8,
-      "value": "\"dd-MMM\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 5000,
-      "length": 13,
-      "value": "\"dd-MMM-yyyy\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "StringLiteral",
-      "offset": 5036,
-      "length": 13,
-      "value": "\"dd\/MMM\/yyyy\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5235,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Motion Activity\/MotionActivityService.swift",
-      "kind": "StringLiteral",
-      "offset": 555,
-      "length": 35,
-      "value": "\"com.kooling.sdk.coreMotionUpdates\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Motion Activity\/MotionActivityService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 817,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Location\/LocationServiceOld.swift",
-      "kind": "BooleanLiteral",
-      "offset": 276,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Health\/HealthService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1271,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Domain\/Use Cases\/Location\/TrackLocationUseCase.swift",
-      "kind": "StringLiteral",
-      "offset": 755,
-      "length": 14,
-      "value": "\"lastLocation\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Domain\/Use Cases\/Location\/TrackLocationUseCase.swift",
-      "kind": "BooleanLiteral",
-      "offset": 902,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/GeneralStatistics.swift",
-      "kind": "IntegerLiteral",
-      "offset": 666,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 61,
-      "length": 8,
-      "value": "\"accept\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 103,
-      "length": 14,
-      "value": "\"Content-Type\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 153,
-      "length": 15,
-      "value": "\"Authorization\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 229,
-      "length": 18,
-      "value": "\"application\/json\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
-      "kind": "StringLiteral",
-      "offset": 287,
-      "length": 21,
-      "value": "\"multipart\/form-data\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/DI\/DI.swift",
-      "kind": "StringLiteral",
-      "offset": 619,
-      "length": 24,
-      "value": "\"StepsAndDistanceEntity\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/DI\/DI.swift",
-      "kind": "StringLiteral",
-      "offset": 792,
-      "length": 16,
-      "value": "\"LocationEntity\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/StatisticsRepository.swift",
-      "kind": "Dictionary",
-      "offset": 348,
-      "length": 3,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Model\/MotionActivityOld.swift",
       "kind": "BooleanLiteral",
       "offset": 200,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/CoreData\/CoreDataService.swift",
-      "kind": "StringLiteral",
-      "offset": 1448,
-      "length": 18,
-      "value": "\"KoolingDataModel\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/CoreData\/CoreDataService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1606,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/CoreData\/CoreDataService.swift",
-      "kind": "StringLiteral",
-      "offset": 1661,
-      "length": 19,
-      "value": "\"com.coredata.save\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Network Client\/NetworkRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 413,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Network Client\/NetworkRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 421,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 69,
-      "length": 13,
-      "value": "\"accessToken\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 156,
-      "length": 11,
-      "value": "\"user_data\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 232,
-      "length": 11,
-      "value": "\"bluetooth\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 320,
-      "length": 20,
-      "value": "\"monthly_statistics\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 433,
-      "length": 11,
-      "value": "\"last_trip\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1880,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 1916,
-      "length": 6,
-      "value": "\"walk\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 1979,
-      "length": 6,
-      "value": "\"walk\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 2005,
-      "length": 6,
-      "value": "\"Walk\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 2035,
-      "length": 5,
-      "value": "\"N\/A\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2074,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 2096,
-      "length": 6,
-      "value": "\"walk\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "StringLiteral",
-      "offset": 2127,
-      "length": 13,
-      "value": "\"koolingBlue\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2164,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2189,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2219,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Network\/UserTripRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 454,
-      "length": 7,
-      "value": "\"Apple\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Network\/UserTripRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 484,
-      "length": 5,
-      "value": "\"iOS\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Network\/UserTripRequest.swift",
-      "kind": "IntegerLiteral",
-      "offset": 516,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/ActivityTracker.swift",
-      "kind": "BooleanLiteral",
-      "offset": 231,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/ActivityTracker.swift",
-      "kind": "BooleanLiteral",
-      "offset": 280,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/ActivityTracker.swift",
-      "kind": "FloatLiteral",
-      "offset": 388,
-      "length": 4,
-      "value": "15.0"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Geofencing\/Models\/GeofencingRegionCenter.swift",
-      "kind": "FloatLiteral",
-      "offset": 448,
-      "length": 9,
-      "value": "6378137.0"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 62,
-      "length": 243,
-      "value": "\"We use geolocation data to automatically detect transport modes and distances travelled, in order to accurately calculate your CO2 emissions and points. Your geolocation data will be discarded immediately after completing these calculations.\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 348,
-      "length": 26,
-      "value": "\"ALLOW LOCATION DETECTION\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 418,
-      "length": 171,
-      "value": "\"In order to accurately detect trips without unnecessary battery usage, we need access to your Activity data. Please click the below button to start the approval process.\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 632,
-      "length": 26,
-      "value": "\"ALLOW ACTIVITY DETECTION\""
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/UserDefaultStorage.swift",
@@ -13952,25 +13483,25 @@
       "value": "\"com.kooling.app.localstorage.sdk.\""
     },
     {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Geofencing\/Models\/GeofencingRegionCenter.swift",
+      "kind": "FloatLiteral",
+      "offset": 448,
+      "length": 9,
+      "value": "6378137.0"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/CoreData\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 98,
+      "length": 12,
+      "value": "\"KoolingSDK\""
+    },
+    {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/StatisticsApi.swift",
       "kind": "StringLiteral",
       "offset": 1017,
       "length": 9,
       "value": "\"general\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Providers\/TokenProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 196,
-      "length": 13,
-      "value": "\"accessToken\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Domain\/Use Cases\/Location\/SynchronizeLocationUseCase.swift",
-      "kind": "BooleanLiteral",
-      "offset": 670,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/DistanceTimeStatistics.swift",
@@ -13980,11 +13511,11 @@
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/CoreData\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 98,
-      "length": 12,
-      "value": "\"KoolingSDK\""
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Domain\/Use Cases\/Location\/SynchronizeLocationUseCase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 670,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/HTTPStatusCode.swift",
@@ -14309,20 +13840,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Network Client\/NetworkClient.swift",
-      "kind": "Array",
-      "offset": 731,
-      "length": 20,
-      "value": "[200, 201, 202, 204]"
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Network Client\/NetworkClient.swift",
-      "kind": "Array",
-      "offset": 981,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/KoolingApi.swift",
       "kind": "StringLiteral",
       "offset": 1219,
@@ -14344,6 +13861,20 @@
       "value": "\"\/v2\/store-kooling-data\""
     },
     {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Network Client\/NetworkClient.swift",
+      "kind": "Array",
+      "offset": 731,
+      "length": 20,
+      "value": "[200, 201, 202, 204]"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Network Client\/NetworkClient.swift",
+      "kind": "Array",
+      "offset": 911,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
       "kind": "StringLiteral",
       "offset": 137,
@@ -14360,65 +13891,51 @@
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
       "kind": "StringLiteral",
-      "offset": 300,
-      "length": 13,
-      "value": "\"accessToken\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
-      "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 386,
       "length": 19,
       "value": "\"lastSubmittedDate\""
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
       "kind": "StringLiteral",
-      "offset": 470,
+      "offset": 476,
       "length": 27,
       "value": "\"lastSavedUserLocationDate\""
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
       "kind": "StringLiteral",
-      "offset": 576,
+      "offset": 582,
       "length": 23,
       "value": "\"lastSavedUserLocation\""
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
       "kind": "StringLiteral",
-      "offset": 682,
+      "offset": 688,
       "length": 18,
       "value": "\"lastActivityType\""
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
       "kind": "StringLiteral",
-      "offset": 778,
+      "offset": 784,
       "length": 22,
       "value": "\"lastActivityTypeDate\""
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 880,
       "length": 18,
       "value": "\"lastActivityType\""
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Storage\/StorageService.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 976,
       "length": 23,
       "value": "\"nextStepSubmittedDate\""
-    },
-    {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/TripSyncService\/TripSyncService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 78,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/TripsApi.swift",
@@ -14426,6 +13943,13 @@
       "offset": 174,
       "length": 12,
       "value": "\"\/ios\/trips\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/TripSyncService\/TripSyncService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 78,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingSDKManager.swift",
@@ -14444,9 +13968,170 @@
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingSDKManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8242,
+      "offset": 8320,
       "length": 2,
       "value": "20"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Models\/Store\/SendLocationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 939,
+      "length": 7,
+      "value": "\"Apple\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Models\/Store\/SendLocationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 969,
+      "length": 8,
+      "value": "\"iOS_v2\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Models\/Store\/SendLocationRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1004,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4372,
+      "length": 23,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4428,
+      "length": 21,
+      "value": "\"yyyy-MM-dd HH:mm:ss\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4490,
+      "length": 27,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4566,
+      "length": 25,
+      "value": "\"yyyy-MM-dd HH:mm:ss.SSS\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4621,
+      "length": 28,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4672,
+      "length": 7,
+      "value": "\"HH:mm\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4698,
+      "length": 9,
+      "value": "\"yyyy-MM\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4728,
+      "length": 12,
+      "value": "\"yyyy-MM-dd\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4761,
+      "length": 12,
+      "value": "\"EEE dd MMM\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4790,
+      "length": 6,
+      "value": "\"yyyy\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4814,
+      "length": 8,
+      "value": "\"dd MMM\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4842,
+      "length": 10,
+      "value": "\"MMM yyyy\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4868,
+      "length": 5,
+      "value": "\"EEE\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4889,
+      "length": 5,
+      "value": "\"MMM\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4912,
+      "length": 4,
+      "value": "\"dd\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4937,
+      "length": 12,
+      "value": "\"MM-dd-yyyy\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 4971,
+      "length": 8,
+      "value": "\"dd-MMM\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 5000,
+      "length": 13,
+      "value": "\"dd-MMM-yyyy\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "StringLiteral",
+      "offset": 5036,
+      "length": 13,
+      "value": "\"dd\/MMM\/yyyy\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/Date + Addition.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5235,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Geofencing\/GeofencingService+NeighbouringRegionsApproach.swift",
@@ -14519,25 +14204,319 @@
       "value": "\"lastStepsAndDistanceFetchDate\""
     },
     {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Models\/Store\/SendLocationRequest.swift",
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/GeneralStatistics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 666,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Motion Activity\/MotionActivityService.swift",
       "kind": "StringLiteral",
-      "offset": 939,
+      "offset": 555,
+      "length": 35,
+      "value": "\"com.kooling.sdk.coreMotionUpdates\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Motion Activity\/MotionActivityService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 817,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 61,
+      "length": 8,
+      "value": "\"accept\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 103,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 153,
+      "length": 15,
+      "value": "\"Authorization\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Constants\/HttpHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 287,
+      "length": 21,
+      "value": "\"multipart\/form-data\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/ActivityTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 231,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/ActivityTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 280,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/ActivityTracker.swift",
+      "kind": "FloatLiteral",
+      "offset": 388,
+      "length": 4,
+      "value": "15.0"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/Health\/HealthService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1271,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Service\/Location\/LocationServiceOld.swift",
+      "kind": "BooleanLiteral",
+      "offset": 276,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/StatisticsRepository.swift",
+      "kind": "Dictionary",
+      "offset": 348,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Domain\/Use Cases\/Location\/TrackLocationUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 755,
+      "length": 14,
+      "value": "\"lastLocation\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Domain\/Use Cases\/Location\/TrackLocationUseCase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 902,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Network\/UserTripRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 454,
       "length": 7,
       "value": "\"Apple\""
     },
     {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Models\/Store\/SendLocationRequest.swift",
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Network\/UserTripRequest.swift",
       "kind": "StringLiteral",
-      "offset": 969,
-      "length": 8,
-      "value": "\"iOS_v2\""
+      "offset": 484,
+      "length": 5,
+      "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Models\/Store\/SendLocationRequest.swift",
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Network\/UserTripRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 1004,
+      "offset": 516,
       "length": 1,
       "value": "7"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/DI\/DI.swift",
+      "kind": "StringLiteral",
+      "offset": 619,
+      "length": 24,
+      "value": "\"StepsAndDistanceEntity\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/DI\/DI.swift",
+      "kind": "StringLiteral",
+      "offset": 792,
+      "length": 16,
+      "value": "\"LocationEntity\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/CoreData\/CoreDataService.swift",
+      "kind": "StringLiteral",
+      "offset": 1448,
+      "length": 18,
+      "value": "\"KoolingDataModel\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/CoreData\/CoreDataService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1606,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Services\/CoreData\/CoreDataService.swift",
+      "kind": "StringLiteral",
+      "offset": 1661,
+      "length": 19,
+      "value": "\"com.coredata.save\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 62,
+      "length": 243,
+      "value": "\"We use geolocation data to automatically detect transport modes and distances travelled, in order to accurately calculate your CO2 emissions and points. Your geolocation data will be discarded immediately after completing these calculations.\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 26,
+      "value": "\"ALLOW LOCATION DETECTION\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 171,
+      "value": "\"In order to accurately detect trips without unnecessary battery usage, we need access to your Activity data. Please click the below button to start the approval process.\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/ActivityTracker\/Infrastructure\/Utility\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 632,
+      "length": 26,
+      "value": "\"ALLOW ACTIVITY DETECTION\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 162,
+      "length": 11,
+      "value": "\"user_data\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 238,
+      "length": 11,
+      "value": "\"bluetooth\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 20,
+      "value": "\"monthly_statistics\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 439,
+      "length": 11,
+      "value": "\"last_trip\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1886,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 1922,
+      "length": 6,
+      "value": "\"walk\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 1985,
+      "length": 6,
+      "value": "\"walk\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 2011,
+      "length": 6,
+      "value": "\"Walk\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 2041,
+      "length": 5,
+      "value": "\"N\/A\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2080,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 2102,
+      "length": 6,
+      "value": "\"walk\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 2133,
+      "length": 13,
+      "value": "\"koolingBlue\""
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2170,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2195,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/KoolingApp\/LocalStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2225,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Network Client\/NetworkRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 413,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/xanhsm-dungnguyen\/Documents\/Kooling\/KoolingSDK\/KoolingSDK\/Refactor\/Data\/Network\/Network Client\/NetworkRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 421,
+      "length": 3,
+      "value": "300"
     }
   ]
 }

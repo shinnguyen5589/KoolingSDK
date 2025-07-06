@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ueDS4AZWqT4Nd7mVKX5A86Ks0Bc=
+		TvygszDkYT0qmawc8AJ4bOLz6B4=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lrqrm1hSdWw+nnZVPNAVKVPWjf4=
+		TrYMvue71aCXymtm4huvGxTnJyU=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lrqrm1hSdWw+nnZVPNAVKVPWjf4=
+		TrYMvue71aCXymtm4huvGxTnJyU=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nk0wFd5Y3IGfa7ujHamyB6Q1F3s=
+		gwASK8zd8yJoGv1XE0L909MsFY4=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ueDS4AZWqT4Nd7mVKX5A86Ks0Bc=
+		TvygszDkYT0qmawc8AJ4bOLz6B4=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+XFRsS2viHcI/5xyraiOkSam6hk=
+		PJHfJ4IR5Dac457eUP864MHgZzU=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+XFRsS2viHcI/5xyraiOkSam6hk=
+		PJHfJ4IR5Dac457eUP864MHgZzU=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		c3lrc8dsMjLlMFlsLkr1dChWcHo=
+		ytHL2+lBNsd8VDXrY+KGzpHzkQ4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,14 +99,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQQ9UyiPMJZ5Q9Nm8hm1Oe6OG2FHKuyRe19ZnWH3loE=
+			MdLFvNeIr5jDDTg398kFG9QHjQYBrwt87swH6MwsVMs=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7GnZW5ssn8biIhvom4GVnHPtqV2Y1Q8wzOAA0yL76kk=
+			lU9E0+KQxwM8ST+hAEdkLVVv5z3SZwcjJ45UxrsmhNw=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -120,28 +120,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7GnZW5ssn8biIhvom4GVnHPtqV2Y1Q8wzOAA0yL76kk=
+			lU9E0+KQxwM8ST+hAEdkLVVv5z3SZwcjJ45UxrsmhNw=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZWZ41N0tBikGkC5cxHjw3r/Z574+/Su/xvGXYLVcEQ=
+			ijUyWhNQeI2EnWfsarDT/E0MKQ4pQJj+z7YtL6ZvHJQ=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQQ9UyiPMJZ5Q9Nm8hm1Oe6OG2FHKuyRe19ZnWH3loE=
+			MdLFvNeIr5jDDTg398kFG9QHjQYBrwt87swH6MwsVMs=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/jArFYfLFGxRHJ0G3+oWHdK1KJXLnTneRPSDChalylU=
+			gBSV1fI8Wxb04JvwYUha3sme+B7KFjxt9qKCqUsJ/7U=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -155,14 +155,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/jArFYfLFGxRHJ0G3+oWHdK1KJXLnTneRPSDChalylU=
+			gBSV1fI8Wxb04JvwYUha3sme+B7KFjxt9qKCqUsJ/7U=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SP2vKQcO9WjsTNSls7mj0Ol2wpC26krv4TuDYtLp4s8=
+			AnnlbqPA4CBbDzM0TRvqPQt3BnxHtM8z1JUXZt0SHQI=
 			</data>
 		</dict>
 	</dict>

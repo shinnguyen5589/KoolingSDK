@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		p89jTNdieydFE2EQss0qWluSf/A=
+		bGom0SHuf7YCj6sf7R4rdFfwnxw=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		O4/TTimPCNsSUdbzK89v7WAefVs=
+		/LUwF/pyyIJ+Wg1Mi3qFPVIYguU=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		O4/TTimPCNsSUdbzK89v7WAefVs=
+		/LUwF/pyyIJ+Wg1Mi3qFPVIYguU=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		aNw8QZNqWRkI946XDfBergK9SCk=
+		C+WwS9SvedgEki9yIjsczIhZJIo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -79,14 +79,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pISTiiIo9dUmcLCLyqjagn07+Y2HJTB8Lz++2b9uuA4=
+			1JQsBEcHNs0rD/uaBXk4zwV9fKNFVIwz476zWUTpGaw=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I9EtigN01Rkv3fNPU/yetCDEs2A6Sb7afccrmNPM71U=
+			CD0WhghgsfLdVUGX1dO3fpxoJ6twvcgXkiAJvJCVdIY=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -100,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I9EtigN01Rkv3fNPU/yetCDEs2A6Sb7afccrmNPM71U=
+			CD0WhghgsfLdVUGX1dO3fpxoJ6twvcgXkiAJvJCVdIY=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+AXSpd+DKAqEmLP2a3r35PiamduUcgWPzTiOhtbCWV8=
+			rqSP32gHqPM1QHaZt3aOr79nZ3DY0esxz/9U7WzbUz4=
 			</data>
 		</dict>
 	</dict>

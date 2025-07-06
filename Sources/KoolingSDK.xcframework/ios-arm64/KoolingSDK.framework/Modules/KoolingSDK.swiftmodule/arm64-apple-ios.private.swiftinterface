@@ -97,6 +97,29 @@ public struct Vehicle : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct TripPreview : Swift.Decodable {
+  public let itinid: Swift.String
+  public let distance: Swift.String
+  public let startdate: Swift.String
+  public let enddate: Swift.String
+  public let defraco2emissions: Swift.String
+  public let absolutepoints: Swift.String
+  public let firstlong: Swift.String?
+  public let firstlat: Swift.String?
+  public let lastlong: Swift.String?
+  public let lastlat: Swift.String?
+  public let transportationmode: Swift.Int
+  public let timestamp: Swift.String?
+  public let vehicletype: Swift.String
+  public let fueltype: Swift.String
+  public let isEnhance: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KoolingSDK.TripPreview {
+  public var trip: KoolingSDK.Trip {
+    get
+  }
+}
 public struct KoolingConfiguration {
   public let accessToken: Swift.String
   public let environment: KoolingSDK.KoolingEnvironment
@@ -164,29 +187,6 @@ public enum KoolingSDKError : Foundation.LocalizedError {
   final public func getTrip(id tripId: Swift.String) async throws -> KoolingSDK.Trip
   final public func getStatistics(for filter: KoolingSDK.GeneralStatistics.Filter) async throws -> [KoolingSDK.GeneralStatistics]
   @objc deinit
-}
-public struct TripPreview : Swift.Decodable {
-  public let itinid: Swift.String
-  public let distance: Swift.String
-  public let startdate: Swift.String
-  public let enddate: Swift.String
-  public let defraco2emissions: Swift.String
-  public let absolutepoints: Swift.String
-  public let firstlong: Swift.String?
-  public let firstlat: Swift.String?
-  public let lastlong: Swift.String?
-  public let lastlat: Swift.String?
-  public let transportationmode: Swift.Int
-  public let timestamp: Swift.String?
-  public let vehicletype: Swift.String
-  public let fueltype: Swift.String
-  public let isEnhance: Swift.Bool
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension KoolingSDK.TripPreview {
-  public var trip: KoolingSDK.Trip {
-    get
-  }
 }
 public struct Trip : Swift.Codable {
   public let itinid: Swift.String?

@@ -19,84 +19,6 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct GeneralStatistics : Swift.Codable {
-  public let transportationmode: Swift.Int
-  public let fueltype: Swift.String
-  public let vehicletype: Swift.String
-  @KoolingSDK.To<Swift.Double> public var defraco2emissions: Swift.Double {
-    get
-  }
-  @KoolingSDK.To<Swift.Double> public var kooldrivingpoints: Swift.Double {
-    get
-  }
-  @KoolingSDK.To<Swift.Double> public var absolutepoints: Swift.Double {
-    get
-  }
-  public var points: Swift.Double {
-    get
-  }
-  public var pointsPerKm: Swift.Double {
-    get
-  }
-  @KoolingSDK.To<Swift.Double> public var distance: Swift.Double {
-    get
-  }
-  public var distanceInKM: Swift.Double {
-    get
-  }
-  @KoolingSDK.To<Swift.Double> public var savedco2e: Swift.Double {
-    get
-  }
-  @KoolingSDK.To<Swift.Double> public var ecodrivingscore: Swift.Double {
-    get
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension KoolingSDK.GeneralStatistics {
-  public enum Filter {
-    case month
-    case year
-    case all
-    public static func == (a: KoolingSDK.GeneralStatistics.Filter, b: KoolingSDK.GeneralStatistics.Filter) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-}
-extension Swift.Array where Element == KoolingSDK.GeneralStatistics {
-  public var vehicleStatistics: [KoolingSDK.VehicleStatistics] {
-    get
-  }
-}
-@propertyWrapper public struct To<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible {
-  public let wrappedValue: T
-  public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct Vehicle : Swift.Codable, Swift.Hashable {
-  public let vehicletype: Swift.String
-  public let name: Swift.String
-  public let fueltype: Swift.String
-  public let transportationmode: Swift.Int
-  public let icon: Swift.String
-  public let colorname: Swift.String
-  public let minValue: Swift.Double
-  public let maxValue: Swift.Double
-  public let isHighImpact: Swift.Bool
-  public var isLowImpact: Swift.Bool {
-    get
-  }
-  public init(vehicletype: Swift.String, name: Swift.String, fueltype: Swift.String, transportationmode: Swift.Int, icon: Swift.String, colorname: Swift.String, minValue: Swift.Double, maxValue: Swift.Double, isHighImpact: Swift.Bool)
-  public static func == (a: KoolingSDK.Vehicle, b: KoolingSDK.Vehicle) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct TripPreview : Swift.Decodable {
   public let itinid: Swift.String
   public let distance: Swift.String
@@ -288,6 +210,57 @@ public enum KoolingSDKError : Foundation.LocalizedError {
   final public func getStatistics(for filter: KoolingSDK.GeneralStatistics.Filter) async throws -> [KoolingSDK.GeneralStatistics]
   @objc deinit
 }
+public struct GeneralStatistics : Swift.Codable {
+  public let transportationmode: Swift.Int
+  public let fueltype: Swift.String
+  public let vehicletype: Swift.String
+  @KoolingSDK.To<Swift.Double> public var defraco2emissions: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var kooldrivingpoints: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var absolutepoints: Swift.Double {
+    get
+  }
+  public var points: Swift.Double {
+    get
+  }
+  public var pointsPerKm: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var distance: Swift.Double {
+    get
+  }
+  public var distanceInKM: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var savedco2e: Swift.Double {
+    get
+  }
+  @KoolingSDK.To<Swift.Double> public var ecodrivingscore: Swift.Double {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KoolingSDK.GeneralStatistics {
+  public enum Filter {
+    case month
+    case year
+    case all
+    public static func == (a: KoolingSDK.GeneralStatistics.Filter, b: KoolingSDK.GeneralStatistics.Filter) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Swift.Array where Element == KoolingSDK.GeneralStatistics {
+  public var vehicleStatistics: [KoolingSDK.VehicleStatistics] {
+    get
+  }
+}
 public struct VehicleStatistics {
   public let vehicle: KoolingSDK.Vehicle
   public let statistics: KoolingSDK.GeneralStatistics
@@ -338,6 +311,33 @@ extension Swift.Array where Element == KoolingSDK.VehicleStatistics {
   public var drivingScore: Swift.Double {
     get
   }
+}
+@propertyWrapper public struct To<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable, T : Swift.LosslessStringConvertible {
+  public let wrappedValue: T
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Vehicle : Swift.Codable, Swift.Hashable {
+  public let vehicletype: Swift.String
+  public let name: Swift.String
+  public let fueltype: Swift.String
+  public let transportationmode: Swift.Int
+  public let icon: Swift.String
+  public let colorname: Swift.String
+  public let minValue: Swift.Double
+  public let maxValue: Swift.Double
+  public let isHighImpact: Swift.Bool
+  public var isLowImpact: Swift.Bool {
+    get
+  }
+  public init(vehicletype: Swift.String, name: Swift.String, fueltype: Swift.String, transportationmode: Swift.Int, icon: Swift.String, colorname: Swift.String, minValue: Swift.Double, maxValue: Swift.Double, isHighImpact: Swift.Bool)
+  public static func == (a: KoolingSDK.Vehicle, b: KoolingSDK.Vehicle) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc(LocationEntityOld) public class LocationEntityOld : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -481,7 +481,7 @@ extension KoolingSDK.StepsAndDistanceEntity {
 extension KoolingSDK.StepsAndDistanceEntity : Swift.Identifiable {
   public typealias ID = Swift.String?
 }
-extension KoolingSDK.GeneralStatistics.Filter : Swift.Equatable {}
-extension KoolingSDK.GeneralStatistics.Filter : Swift.Hashable {}
 extension KoolingSDK.KoolingEnvironment : Swift.Equatable {}
 extension KoolingSDK.KoolingEnvironment : Swift.Hashable {}
+extension KoolingSDK.GeneralStatistics.Filter : Swift.Equatable {}
+extension KoolingSDK.GeneralStatistics.Filter : Swift.Hashable {}
