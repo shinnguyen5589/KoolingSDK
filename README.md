@@ -11,8 +11,8 @@ A Swift Package Manager library that provides prebuilt KoolingSDK framework with
 ## Requirements
 
 - iOS 15.0+
-- Xcode 13.0+
-- Swift 5.5+
+- Xcode 15.0+
+- Swift 6.1+
 
 ## Installation
 
@@ -22,7 +22,7 @@ Add KoolingSDK to your project using Swift Package Manager:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/shinnguyen5589/KoolingSDK.git", from: "1.0.1")
+    .package(url: "https://github.com/shinnguyen5589/KoolingSDK.git", from: "1.0.2")
 ]
 ```
 
@@ -66,6 +66,20 @@ Add these permissions to your `Info.plist`:
     <string>fetch</string>
 </array>
 ```
+
+## Required Capabilities
+
+In your Xcode project, go to **Signing & Capabilities** and add the following capabilities:
+
+### Background Modes
+- ✅ **Background fetch**: Allows the app to fetch data in the background
+- ✅ **Location updates**: Enables location tracking when app is in background
+- ✅ **Uses Bluetooth LE accessories**: Required for Bluetooth Low Energy functionality
+
+### HealthKit
+- ✅ **HealthKit Background Delivery**: Allows background delivery of HealthKit Observer Queries
+
+> **Note**: These capabilities must be enabled in your Xcode project's **Signing & Capabilities** tab for the SDK to function properly.
 
 ## Usage
 
