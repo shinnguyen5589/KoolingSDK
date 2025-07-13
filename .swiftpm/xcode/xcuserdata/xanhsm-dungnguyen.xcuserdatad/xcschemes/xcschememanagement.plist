@@ -22,12 +22,17 @@
 		<key>Alamofire.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>1</integer>
+		</dict>
+		<key>KoolingSDK-Package.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 		<key>KoolingSDK.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Refactor.xcscheme_^#shared#^_</key>
 		<dict>
