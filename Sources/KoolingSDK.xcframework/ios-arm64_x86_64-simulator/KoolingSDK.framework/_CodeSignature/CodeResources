@@ -66,43 +66,43 @@
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+TO6WfdZsRv8p6wqBE305ISiKmo=
+		M2smcghYuknYbfyDMmVv1NExb7o=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pb0FyAjyOOVaMKqHdAMkHQE/i8Y=
+		8qK5mDPzZ4HsAASjj+EpC3n6ti4=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JGNimg048BbUtqXvVdOJ5cDPN8M=
+		OaAGxTamQQBCyYuxjaL5Cm7DblQ=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pb0FyAjyOOVaMKqHdAMkHQE/i8Y=
+		8qK5mDPzZ4HsAASjj+EpC3n6ti4=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ahKuPIbdiCxt48u0KRXUkEyfTd8=
+		IoBqqVf37ARY1Kh7QxPGzBkNF1U=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+TO6WfdZsRv8p6wqBE305ISiKmo=
+		M2smcghYuknYbfyDMmVv1NExb7o=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		is8VkPC4FrA5gJuEWOZgjxR3/9E=
+		xHu3pySJUPXKabJp9w020rZmSUM=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7fW43Zvm4NaaLvPzkkBgTE7rNhg=
+		ThVv4W2Qt7Ez8ZvApkqQ9LiWNhE=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		is8VkPC4FrA5gJuEWOZgjxR3/9E=
+		xHu3pySJUPXKabJp9w020rZmSUM=
 		</data>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Fa7NEN8uAcVby1chP9khRP6YpDI=
+		KuGaz8YZkP8P+ns+RWIPpYcQYUg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -209,70 +209,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lu+eCd0nN57KS4Pb6a9siq9IJ5uyof8c9pYaF7qiSy8=
+			xiM2uzvCDkYHOS9nQq4IZbeiO9413YOdkNINmDXSr3s=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2GAjQ3zcZV3ZtwNWC+IcghU+UIFkktCmtOpTi+MeD3M=
+			/XxDXKb7ad6rUqIdS80dFYr6T28mXLblUh+zRBjWlhg=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4IFtDtiSodhNW8AoHQTHojxMFx9Ej/wilmtMj19pTlA=
+			WVabIXwwalpDG9SdG5tGSD3oyrefZjC3t9c/c24/V6E=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2GAjQ3zcZV3ZtwNWC+IcghU+UIFkktCmtOpTi+MeD3M=
+			/XxDXKb7ad6rUqIdS80dFYr6T28mXLblUh+zRBjWlhg=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NUAygPVZLs3Ndjwl4ZCkfWrocsYl4i6WcHnZlfKaelA=
+			iZxz75O2UdORzR6qzqmD2tHbDBi5DAD6nVJU1n6Y1Iw=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lu+eCd0nN57KS4Pb6a9siq9IJ5uyof8c9pYaF7qiSy8=
+			xiM2uzvCDkYHOS9nQq4IZbeiO9413YOdkNINmDXSr3s=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RQOkA0ONX21ywh+w+XGgRVT+JY4kSPVL62bdVmtoEBo=
+			HBn3hfbNIf4GZzOjXTpX77hdu5ZV9wYAKBM0/HPLMgI=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UwVSF/AFhek6XZBdBa8ifCQFMSXXjIHCdA/EvBTNl3o=
+			NEL37eyxJTLTUPRwvQNKJuYJG/s+LOSt2gMwAIlg6NY=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RQOkA0ONX21ywh+w+XGgRVT+JY4kSPVL62bdVmtoEBo=
+			HBn3hfbNIf4GZzOjXTpX77hdu5ZV9wYAKBM0/HPLMgI=
 			</data>
 		</dict>
 		<key>Modules/KoolingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FrUnoiNpFEb2ZNFA36pGIAT99yYiODD+zXEX4fCDNKE=
+			12tLi9lXSus52oUfXpoquh6cjZrOb8k/yxkUFbrEr2g=
 			</data>
 		</dict>
 	</dict>

@@ -19,406 +19,36 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct GeofencingRegionCenter {
-  public let latitude: Swift.Double
-  public let longitude: Swift.Double
-  public let identifier: Swift.String
-  public init(latitude: Swift.Double, longitude: Swift.Double, identifier: Swift.String)
-}
-public protocol TrackLocationUseCase : AnyObject {
-  func execute()
-  func stop()
-}
-final public class TrackLocationUseCaseImplementation {
-  final public let locationRepository: any KoolingSDK.LocationRepository
-  public init(locationService: any KoolingSDK.LocationService = DIContainer.shared.locationService, motionActivityService: any KoolingSDK.MotionActivityService = DIContainer.shared.motionActivityService, locationRepository: any KoolingSDK.LocationRepository = DIContainer.shared.locationRepository, storeApi: any KoolingSDK.StoreApi = DIContainer.shared.storeApi)
-  @objc deinit
-}
-extension KoolingSDK.TrackLocationUseCaseImplementation : KoolingSDK.TrackLocationUseCase {
-  final public func execute()
-  final public func stop()
-}
-public protocol StepsAndDistanceRepository : KoolingSDK.Repository where Self.ItemType == KoolingSDK.StepsAndDistanceCoreDataEntity {
-}
-public struct StepsAndDistance {
-  public let steps: Swift.Double
-  public let distance: Swift.Double
-  public let creationDate: Foundation.Date
-  public init(steps: Swift.Double, distance: Swift.Double, creationDate: Foundation.Date)
-}
-public struct EmptyResponse : Swift.Decodable {
-  public static let value: KoolingSDK.EmptyResponse
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension KoolingSDK.EmptyResponse : Alamofire.EmptyResponse {
-  public static func emptyValue() -> KoolingSDK.EmptyResponse
-}
-public protocol Repository {
-  associatedtype ItemType
-  func add(item: Self.ItemType) async throws
-  func add(items: [Self.ItemType]) async throws
-  func get(itemId: Swift.String) async -> Self.ItemType?
-  func get() -> [Self.ItemType]?
-  func addOrUpdate(item: Self.ItemType) async throws
-  func addOrUpdate(items: [Self.ItemType]) async throws
-  func update(_ closure: () -> Self.ItemType) async
-  func remove(item: Self.ItemType) async
-  func remove(itemId: Swift.String) async
-  func remove(items: [Self.ItemType]) async
-  func removeAll(for type: Self.ItemType.Type) async
-  func clear() async
-}
-public protocol LocationService : AnyObject {
-  var currentLocationPublisher: Combine.AnyPublisher<CoreLocation.CLLocation, Swift.Never> { get }
-  var currentLocations: _Concurrency.AsyncStream<CoreLocation.CLLocation> { get }
-  func start()
-  func restart()
-  func stop()
-}
-@objc final public class LocationServiceImplementation : ObjectiveC.NSObject {
-  public init(locationManager: CoreLocation.CLLocationManager, geofencingService: any KoolingSDK.GeofencingService)
-  @objc deinit
-}
-extension KoolingSDK.LocationServiceImplementation : KoolingSDK.LocationService {
-  final public var currentLocationPublisher: Combine.AnyPublisher<CoreLocation.CLLocation, Swift.Never> {
+public enum KoolingEnvironment : Swift.CaseIterable {
+  case production
+  case staging
+  public static func == (a: KoolingSDK.KoolingEnvironment, b: KoolingSDK.KoolingEnvironment) -> Swift.Bool
+  public typealias AllCases = [KoolingSDK.KoolingEnvironment]
+  nonisolated public static var allCases: [KoolingSDK.KoolingEnvironment] {
     get
   }
-  final public var currentLocations: _Concurrency.AsyncStream<CoreLocation.CLLocation> {
-    get
-  }
-  final public func start()
-  final public func restart()
-  final public func stop()
-}
-extension KoolingSDK.LocationServiceImplementation : CoreLocation.CLLocationManagerDelegate {
-  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
-  @objc final public func locationManagerDidPauseLocationUpdates(_ manager: CoreLocation.CLLocationManager)
-  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
-  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, didVisit visit: CoreLocation.CLVisit)
-  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, didEnterRegion region: CoreLocation.CLRegion)
-  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, didExitRegion region: CoreLocation.CLRegion)
-  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, monitoringDidFailFor region: CoreLocation.CLRegion?, withError error: any Swift.Error)
-}
-@_hasMissingDesignatedInitializers @globalActor public actor RealmActor {
-  public static let shared: KoolingSDK.RealmActor
-  public typealias ActorType = KoolingSDK.RealmActor
-  @objc deinit
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
-    get
-  }
-}
-public protocol HealthService : AnyObject {
-  func requestAuthorization() async throws
-  func observeStepsAndDistance(updates: @escaping () async -> Swift.Void) async throws
-  func fetchSumOf(_ quantityType: KoolingSDK.QuantityType, from fromDate: Foundation.Date, to toDate: Foundation.Date) async -> Swift.Double
-  func stopObservingStepsAndDistance(completion: @escaping () -> Swift.Void)
-}
-public enum QuantityType {
-  case steps, distance
-  public static func == (a: KoolingSDK.QuantityType, b: KoolingSDK.QuantityType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-final public class HealthServiceImplementation {
-  public init(healthStore: HealthKit.HKHealthStore)
-  @objc deinit
-}
-extension KoolingSDK.HealthServiceImplementation : KoolingSDK.HealthService {
-  final public func requestAuthorization() async throws
-  final public func fetchSumOf(_ quantityType: KoolingSDK.QuantityType, from fromDate: Foundation.Date, to toDate: Foundation.Date) async -> Swift.Double
-  final public func observeStepsAndDistance(updates: @escaping () async -> Swift.Void) async throws
-  final public func stopObservingStepsAndDistance(completion: @escaping () -> Swift.Void)
-}
-public struct Coordinate {
-  public let latitude: Swift.Double
-  public let longitude: Swift.Double
-}
-extension CoreLocation.CLLocationCoordinate2D {
-  public func toCoordinate() -> KoolingSDK.Coordinate
-}
-public struct NetworkRequest<E> where E : Swift.Encodable {
-  public let endpoint: Swift.String
-  public let method: KoolingSDK.HttpMethod
-  public let parameters: E
-  public let acceptableStatusCodes: Swift.Range<Swift.Int>
-  public let encoderType: KoolingSDK.EncoderType
-  public init(endpoint: Swift.String, method: KoolingSDK.HttpMethod, parameters: E, acceptableStatusCodes: Swift.Range<Swift.Int> = 200 ..< 300, encoderType: KoolingSDK.EncoderType = .methodDefault)
-}
-public protocol TokenProvider : AnyObject {
-  func get() -> Swift.String?
-}
-final public class TokenProviderImplementation : KoolingSDK.TokenProvider {
-  public init()
-  final public func get() -> Swift.String?
-  @objc deinit
-}
-public let syncrhonizeLocationUseCase: any KoolingSDK.SynchronizeLocationUseCase
-public protocol SynchronizeLocationUseCase : AnyObject {
-  func execute()
-}
-final public class SynchronizeLocationUseCaseImplementation {
-  final public let locationRepository: any KoolingSDK.LocationRepository
-  public init(locationService: any KoolingSDK.LocationService = DIContainer.shared.locationService, motionActivityService: any KoolingSDK.MotionActivityService = DIContainer.shared.motionActivityService, locationRepository: any KoolingSDK.LocationRepository = DIContainer.shared.locationRepository, storeApi: any KoolingSDK.StoreApi = DIContainer.shared.storeApi)
-  @objc deinit
-}
-extension KoolingSDK.SynchronizeLocationUseCaseImplementation : KoolingSDK.SynchronizeLocationUseCase {
-  final public func execute()
-}
-public struct StoreResponse : Swift.Decodable {
-  public let success: Swift.Bool
-  public init(from decoder: any Swift.Decoder) throws
-}
-public protocol LocationRepository : KoolingSDK.Repository where Self.ItemType == KoolingSDK.LocationCoreDataEntity {
-}
-extension Alamofire.URLEncodedFormParameterEncoder {
-  public static let queryParameter: Alamofire.URLEncodedFormParameterEncoder
-}
-@_hasMissingDesignatedInitializers public class ActivityTracker {
-  public static var isEnablePrintLogs: Swift.Bool
-  public static var isEnableFileLogs: Swift.Bool
-  public static let shared: KoolingSDK.ActivityTracker
-  public var onChangeMotionActivityAction: ((KoolingSDK.MotionActivity) -> Swift.Void)?
-  public var onChangeDataPoints: (() -> Swift.Void)?
-  public var currentActivity: KoolingSDK.MotionActivityOld {
+@_hasMissingDesignatedInitializers final public class KoolingSDKManager {
+  public static let shared: KoolingSDK.KoolingSDKManager
+  final public func configure(environment: KoolingSDK.KoolingEnvironment)
+  final public var baseUrlString: Swift.String {
     get
   }
-  public var dataPoints: [KoolingSDK.UserLocation] {
+  final public func startTracking(token: Swift.String, viewController: UIKit.UIViewController?, trackingClosure: (() -> Swift.Void)?)
+  final public func stopTracking(trackingClosure: (() -> Swift.Void)?)
+  final public var isTracking: Swift.Bool {
     get
   }
-  public var isTracking: Swift.Bool {
-    get
-  }
-  public func startTracking(with url: Foundation.URL?, token: Swift.String, viewController: UIKit.UIViewController?, trackingClosure: (() -> Swift.Void)?)
-  public func stopTracking(trackingClosure: (() -> Swift.Void)?)
-  public func clearAll()
-  public func clearAllLogs()
+  final public func log(_ message: Swift.String)
+  final public func setupLog(issueLogClosure: ((Swift.String, Swift.String) -> Swift.Void)?)
+  final public func showLoggerUI(rootViewController: UIKit.UIViewController)
   @objc deinit
 }
-extension KoolingSDK.ActivityTracker {
-  public static func startTracking(with url: Foundation.URL?, token: Swift.String, viewController: UIKit.UIViewController?, trackingClosure: (() -> Swift.Void)?)
-  public static func stopTracking(trackingClosure: (() -> Swift.Void)?)
-  public static func isTracking() -> Swift.Bool
-}
-public func setupLog(issueLogClosure: ((Swift.String, Swift.String) -> Swift.Void)?)
-public struct Log {
-  public static func issue(_ title: Swift.String, _ message: Swift.String)
-  public static func debug(_ message: Swift.String)
-  public static func info(_ message: Swift.String)
-  public static func warning(_ message: Swift.String)
-  public static func error(_ message: Swift.String)
-  public static func verbose(_ message: Swift.String)
-}
-public protocol NetworkClient : AnyObject {
-  func send<E, D>(_ networkRequest: KoolingSDK.NetworkRequest<E>) async throws -> D where E : Swift.Encodable, D : Swift.Decodable
-  func sendAuthenticated<E, D>(_ networkRequest: KoolingSDK.NetworkRequest<E>) async throws -> D where E : Swift.Encodable, D : Swift.Decodable
-}
-final public class NetworkClientImplementation {
-  public init(baseUrlString: Swift.String, tokenProvider: any KoolingSDK.TokenProvider = TokenProviderImplementation(), sessionConfiguration: Foundation.URLSessionConfiguration = .ephemeral, eventMonitors: [any Alamofire.EventMonitor] = [], jsonEncoder: Foundation.JSONEncoder = JSONEncoder(), jsonDecoder: Foundation.JSONDecoder = JSONDecoder(), parameterEncoder: Alamofire.URLEncodedFormParameterEncoder = .queryParameter)
-  @objc deinit
-}
-extension KoolingSDK.NetworkClientImplementation : KoolingSDK.NetworkClient {
-  final public func send<E, D>(_ networkRequest: KoolingSDK.NetworkRequest<E>) async throws -> D where E : Swift.Encodable, D : Swift.Decodable
-  final public func sendAuthenticated<E, D>(_ networkRequest: KoolingSDK.NetworkRequest<E>) async throws -> D where E : Swift.Encodable, D : Swift.Decodable
-}
-public enum ActivityTypeEntity : Swift.String, Swift.CaseIterable {
-  case none
-  case walking
-  case running
-  case automotive
-  case cycling
-  case unknown
-  public func toInt() -> Swift.Int
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [KoolingSDK.ActivityTypeEntity]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [KoolingSDK.ActivityTypeEntity] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension KoolingSDK.ActivityTypeEntity {
-  public func toEntity() -> Swift.String
-}
-public protocol LastStepsAndDistanceFetchDateProvider : AnyObject {
-  func get() -> Foundation.Date?
-  func set(_ date: Foundation.Date)
-}
-extension KoolingSDK.LastStepsAndDistanceFetchDateProvider {
-  public func set(_ date: Foundation.Date = Date())
-}
-final public class LastStepsAndDistanceFetchDateProviderImplementation : KoolingSDK.LastStepsAndDistanceFetchDateProvider {
-  public init()
-  final public func get() -> Foundation.Date?
-  final public func set(_ date: Foundation.Date)
-  @objc deinit
-}
-public struct StepsAndDistanceRequest : Swift.Encodable {
-  public init(steps: Swift.Double, distance: Swift.Double, timestamp: Foundation.Date)
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-@_hasMissingDesignatedInitializers public class HealthServiceOld {
-  public typealias AuthorizationCompletion = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
-  public typealias ObserverCompletion = (HealthKit.HKObserverQuery, Swift.Set<HealthKit.HKSampleType>?, @escaping HealthKit.HKObserverQueryCompletionHandler, (any Swift.Error)?) -> Swift.Void
-  public static let shared: KoolingSDK.HealthServiceOld
-  public func observeStepsAndDistance(completion: @escaping KoolingSDK.HealthServiceOld.ObserverCompletion)
-  public func requestAuthorization(completion: @escaping KoolingSDK.HealthServiceOld.AuthorizationCompletion)
-  public func fetchStepsAndDistanceBetween(from date: Foundation.Date, to: Foundation.Date, handler: ((Swift.Int, Swift.Double) -> Swift.Void)?)
-  @objc deinit
-}
-extension KoolingSDK.HealthServiceOld {
-  public func askPermissionIfNotProvided(handler: ((Swift.Bool) -> Swift.Void)?)
-  public func fetchStepsCount(from date: Foundation.Date, to: Foundation.Date?, handler: ((Swift.Int) -> Swift.Void)?)
-  public func fetchDistance(from date: Foundation.Date, to: Foundation.Date, handler: ((Swift.Double) -> Swift.Void)?)
-}
-public protocol MotionActivityService : AnyObject {
-  var activityPublisher: Combine.AnyPublisher<KoolingSDK.MotionActivity, Swift.Never> { get }
-  var activities: _Concurrency.AsyncStream<KoolingSDK.MotionActivity> { get }
-  func start()
-  func restart()
-  func stop()
-}
-final public class MotionActivityServiceImplementation {
-  public init(motionActivityManager: CoreMotion.CMMotionActivityManager = CMMotionActivityManager())
-  @objc deinit
-}
-extension KoolingSDK.MotionActivityServiceImplementation : KoolingSDK.MotionActivityService {
-  final public var activityPublisher: Combine.AnyPublisher<KoolingSDK.MotionActivity, Swift.Never> {
-    get
-  }
-  final public var activities: _Concurrency.AsyncStream<KoolingSDK.MotionActivity> {
-    get
-  }
-  final public func start()
-  final public func restart()
-  final public func stop()
-}
-public struct UserLocation : Swift.Codable {
-  public let id: Foundation.UUID
-  public let latitude: Swift.Double
-  public let longitude: Swift.Double
-  public let speed: Swift.Double
-  public let altitude: Swift.Double
-  public var distance: Swift.Double
-  public let accuracy: Swift.Double
-  public let coarse: Swift.Double
-  public let activityType: KoolingSDK.ActivityType
-  public let timestamp: Foundation.Date
-  public var steps: Swift.Int
-  public let bluetooth: Swift.String
-  public let isSubmitted: Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@propertyWrapper public struct UserDefaultCustomStorage<Value> where Value : Swift.Decodable, Value : Swift.Encodable {
-  public var wrappedValue: Value? {
-    get
-    set
-  }
-}
-public struct UserLocationRequest : Swift.Codable {
-  public let latitude: Swift.Double
-  public let longitude: Swift.Double
-  public let speed: Swift.Double
-  public let altitude: Swift.Double
-  public let distance: Swift.Double
-  public let accuracy: Swift.Double
-  public let coarse: Swift.Double
-  public let motiontype: Swift.Int
-  public let timestamp: Swift.Int64
-  public var steps: Swift.Int
-  public let bluetooth: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@_hasMissingDesignatedInitializers public class ActivityTrackerUI {
-  public static func showLoggerUI(rootViewController: UIKit.UIViewController)
-  @objc deinit
-}
-public enum EncoderType {
-  case queryParameter
-  case json
-  case methodDefault
-  public static func == (a: KoolingSDK.EncoderType, b: KoolingSDK.EncoderType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension Foundation.Date : Swift.Strideable {
-  public typealias Stride = Foundation.TimeInterval
-  public func distance(to other: Foundation.Date) -> Foundation.Date.Stride
-  public func advanced(by n: Foundation.Date.Stride) -> Foundation.Date
-}
-public struct SendStepsAndDistancesRequest : Swift.Encodable {
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct MotionActivity {
-  public let isMoving: Swift.Bool
-  public let type: KoolingSDK.MotionActivity.ActivityType
-  public let startDate: Foundation.Date
-}
-extension KoolingSDK.MotionActivity {
-  public enum ActivityType : Swift.String {
-    case none
-    case walking
-    case running
-    case automotive
-    case cycling
-    case unknown
-    public var value: Swift.Int {
-      get
-    }
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-}
-public struct MotionActivityOld {
-  public let isMoving: Swift.Bool
-  public var activityType: KoolingSDK.ActivityType
-  public let startDate: Foundation.Date
-}
-public class NetworkApi {
-  public init(with networkClient: any KoolingSDK.NetworkClient)
-  @objc deinit
-}
-public struct TrackLogger {
-  public static func logSubmittedDataPoints(_ finalMessage: Swift.String, fileName: Swift.String?)
-  public static func log(_ message: Swift.String)
-  public static func readLogs() -> Swift.String
-  public static func deleteLog()
-  public static func logFiles() -> [Swift.String]
-  public static func readLog(from fileName: Swift.String) -> Foundation.Data?
-  public static func submittedFiles() -> [Swift.String]
-  public static func jsonData(for fileName: Swift.String) -> Foundation.Data?
-}
-extension KoolingSDK.TrackLogger {
-  public static func archieveLogs(completion: (Foundation.URL?) -> Swift.Void)
-  public static func shareLogs(on controller: UIKit.UIViewController, loadingHandler: ((Swift.Bool) -> Swift.Void)?)
-}
-extension Foundation.Date {
-  public var logTime: Swift.String {
-    get
-  }
-}
-public protocol GeofencingService : AnyObject {
-  func regions(around location: CoreLocation.CLLocation) -> Swift.Set<CoreLocation.CLCircularRegion>
-}
-final public class GeofencingServiceImplementation {
-  public init()
-  @objc deinit
-}
-extension KoolingSDK.GeofencingServiceImplementation : KoolingSDK.GeofencingService {
-  final public func regions(around location: CoreLocation.CLLocation) -> Swift.Set<CoreLocation.CLCircularRegion>
-}
-public enum NetworkError : Foundation.LocalizedError {
+public enum KoolingNetworkError : Foundation.LocalizedError {
   case invalidUrl
   case unauthorized
   case accessTokenIsNotPresent
@@ -429,151 +59,62 @@ public enum NetworkError : Foundation.LocalizedError {
   case apiError(statusCode: Swift.Int, errorMessage: Swift.String? = nil)
   case unknownError(underlyingError: (any Swift.Error)?)
 }
-extension KoolingSDK.NetworkError {
+extension KoolingSDK.KoolingNetworkError {
   public var errorDescription: Swift.String? {
     get
   }
 }
-public protocol ObserveStepsAndDistanceUseCase : AnyObject {
-  func execute()
-  func stop()
+extension Alamofire.AFError {
+  public func toNetworkError(message: Swift.String?) -> KoolingSDK.KoolingNetworkError
 }
-final public class ObserveStepsAndDistanceUseCaseImplementation {
-  public init(healthService: any KoolingSDK.HealthService = DIContainer.shared.healthService, stepsAndDistanceRepository: any KoolingSDK.StepsAndDistanceRepository = DIContainer.shared.stepsAndDistanceRepository, lastStepsAndDistanceFetchDateProvider: any KoolingSDK.LastStepsAndDistanceFetchDateProvider = LastStepsAndDistanceFetchDateProviderImplementation(), storeApi: any KoolingSDK.StoreApi = DIContainer.shared.storeApi)
+public protocol KoolingNetworkClient : AnyObject {
+  func send<E, D>(_ networkRequest: KoolingSDK.KoolingNetworkRequest<E>) async throws -> D where E : Swift.Encodable, D : Swift.Decodable
+  func sendAuthenticated<E, D>(_ networkRequest: KoolingSDK.KoolingNetworkRequest<E>) async throws -> D where E : Swift.Encodable, D : Swift.Decodable
+}
+final public class KoolingNetworkClientImplementation {
+  public init(baseUrlString: Swift.String, sessionConfiguration: Foundation.URLSessionConfiguration = .ephemeral, eventMonitors: [any Alamofire.EventMonitor] = [], jsonEncoder: Foundation.JSONEncoder = JSONEncoder(), jsonDecoder: Foundation.JSONDecoder = JSONDecoder(), parameterEncoder: Alamofire.URLEncodedFormParameterEncoder = .queryParameter)
   @objc deinit
 }
-extension KoolingSDK.ObserveStepsAndDistanceUseCaseImplementation : KoolingSDK.ObserveStepsAndDistanceUseCase {
-  final public func execute()
-  final public func stop()
+extension KoolingSDK.KoolingNetworkClientImplementation : KoolingSDK.KoolingNetworkClient {
+  final public func send<E, D>(_ networkRequest: KoolingSDK.KoolingNetworkRequest<E>) async throws -> D where E : Swift.Encodable, D : Swift.Decodable
+  final public func sendAuthenticated<E, D>(_ networkRequest: KoolingSDK.KoolingNetworkRequest<E>) async throws -> D where E : Swift.Encodable, D : Swift.Decodable
 }
-@propertyWrapper public struct UserDefault<T> {
-  public let key: Swift.String
-  public let defaultValue: T
-  public var wrappedValue: T {
-    get
-    set
-  }
+public struct KoolingNetworkRequest<E> where E : Swift.Encodable {
+  public let endpoint: Swift.String
+  public let method: KoolingSDK.KoolingHttpMethod
+  public let parameters: E
+  public let acceptableStatusCodes: Swift.Range<Swift.Int>
+  public let encoderType: KoolingSDK.KoolingEncoderType
+  public init(endpoint: Swift.String, method: KoolingSDK.KoolingHttpMethod, parameters: E, acceptableStatusCodes: Swift.Range<Swift.Int> = 200 ..< 300, encoderType: KoolingSDK.KoolingEncoderType = .methodDefault)
 }
-@propertyWrapper public struct CodableUserDefault<T> where T : Swift.Decodable, T : Swift.Encodable {
-  public let key: Swift.String
-  public var wrappedValue: T? {
-    get
-    set
-  }
-}
-public struct SendLocationRequest : Swift.Encodable {
-  public init(activityTypeInt: Swift.Int, data: [KoolingSDK.LocationRequest])
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public struct LocationRequest : Swift.Encodable {
-  public let latitude: Swift.Double
-  public let longitude: Swift.Double
-  public let speed: Swift.Double
-  public let altitude: Swift.Double
-  public let accuracy: Swift.Double
-  public let coarse: Swift.Double
-  public let motiontype: Swift.Int
-  public let timestamp: Swift.Int64
-  public let bluetooth: Swift.String
-  public let distance: Swift.Double
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-@_hasMissingDesignatedInitializers final public class DIContainer {
-  public static let shared: KoolingSDK.DIContainer
-  final public var healthStore: HealthKit.HKHealthStore {
-    get
-    set
-  }
-  final public var healthService: any KoolingSDK.HealthService {
-    get
-    set
-  }
-  final public var stepsAndDistanceRepository: any KoolingSDK.StepsAndDistanceRepository {
-    get
-    set
-  }
-  final public var locationRepository: any KoolingSDK.LocationRepository {
-    get
-    set
-  }
-  final public var baseUrlString: Swift.String!
-  final public var networkClient: any KoolingSDK.NetworkClient {
-    get
-    set
-  }
-  final public var storeApi: any KoolingSDK.StoreApi {
-    get
-    set
-  }
-  final public var locationService: any KoolingSDK.LocationService {
-    get
-    set
-  }
-  final public var motionActivityService: any KoolingSDK.MotionActivityService {
-    get
-    set
-  }
-  @objc deinit
-}
-public enum ActivityType : Swift.Codable {
-  case none
-  case walking
-  case running
-  case automotive
-  case cycling
-  case unknown
-  public var name: Swift.String {
-    get
-  }
-  public var value: Swift.Int {
-    get
-  }
-  public static func == (a: KoolingSDK.ActivityType, b: KoolingSDK.ActivityType) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
+public enum KoolingHttpMethod {
+  case get
+  case post
+  case patch
+  case put
+  case delete
+  public static func == (a: KoolingSDK.KoolingHttpMethod, b: KoolingSDK.KoolingHttpMethod) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
-public enum HealthServiceError : Swift.Error {
-  case healthDataUnavailable
-  case stepsUnauthorized
-  case distanceUnauthorized
-  case unknownError(underlyingError: (any Swift.Error)?)
-}
-public protocol StoreApi : AnyObject {
-  func sendStepsAndDistances(_ request: KoolingSDK.SendStepsAndDistancesRequest) async throws -> KoolingSDK.StoreResponse
-  func sendLocations(_ request: KoolingSDK.SendLocationRequest) async throws -> KoolingSDK.StoreResponse
-}
-@_inheritsConvenienceInitializers final public class StoreApiImplementation : KoolingSDK.NetworkApi {
-  override public init(with networkClient: any KoolingSDK.NetworkClient)
-  @objc deinit
-}
-extension KoolingSDK.StoreApiImplementation : KoolingSDK.StoreApi {
-  final public func sendStepsAndDistances(_ request: KoolingSDK.SendStepsAndDistancesRequest) async throws -> KoolingSDK.StoreResponse
-  final public func sendLocations(_ request: KoolingSDK.SendLocationRequest) async throws -> KoolingSDK.StoreResponse
-}
-public struct RegionOffset {
-  public let latitudeOffset: Swift.Double
-  public let longitudeOffset: Swift.Double
-  public let identifier: KoolingSDK.RegionOffsetIdentifier
-}
-extension KoolingSDK.RegionOffset {
-  public static func `for`(horizontalVerticalOffset: Swift.Double, diagonalOffset: Swift.Double) -> [KoolingSDK.RegionOffset]
-}
-public enum RegionOffsetIdentifier : Swift.String {
-  case north, northWest, northEast
-  case south, southWest, southEast
-  case east, west
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+public enum KoolingEncoderType {
+  case queryParameter
+  case json
+  case methodDefault
+  public static func == (a: KoolingSDK.KoolingEncoderType, b: KoolingSDK.KoolingEncoderType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
-extension Alamofire.AFError {
-  public func toNetworkError(message: Swift.String?) -> KoolingSDK.NetworkError
+extension Alamofire.URLEncodedFormParameterEncoder {
+  public static let queryParameter: Alamofire.URLEncodedFormParameterEncoder
+}
+public class KoolingNetworkApi {
+  public init(with networkClient: any KoolingSDK.KoolingNetworkClient)
+  @objc deinit
 }
 extension Foundation.Date {
   public static var sharedCalendar: Foundation.Calendar
@@ -594,17 +135,72 @@ extension Foundation.Date {
   }
   public func isSameDay(with date: Foundation.Date) -> Swift.Bool
 }
-public enum HttpMethod {
-  case get
-  case post
-  case patch
-  case put
-  case delete
-  public static func == (a: KoolingSDK.HttpMethod, b: KoolingSDK.HttpMethod) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
+extension Foundation.Date : Swift.Strideable {
+  public typealias Stride = Foundation.TimeInterval
+  public func distance(to other: Foundation.Date) -> Foundation.Date.Stride
+  public func advanced(by n: Foundation.Date.Stride) -> Foundation.Date
+}
+@_inheritsConvenienceInitializers @objc(LocationEntityOld) public class LocationEntityOld : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension KoolingSDK.LocationEntityOld {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<KoolingSDK.LocationEntityOld>
+  @objc @NSManaged dynamic public var accuracy: Swift.Double {
+    @objc get
+    @objc set
   }
+  @objc @NSManaged dynamic public var altitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var bluetooth: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var coarse: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Foundation.UUID? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isSubmitted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var motiontype: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var speed: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var steps: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+}
+extension KoolingSDK.LocationEntityOld : Swift.Identifiable {
+  public typealias ID = Foundation.UUID?
 }
 @_inheritsConvenienceInitializers @objc(LocationCoreDataEntity) public class LocationCoreDataEntity : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -686,83 +282,9 @@ extension KoolingSDK.StepsAndDistanceCoreDataEntity {
 extension KoolingSDK.StepsAndDistanceCoreDataEntity : Swift.Identifiable {
   public typealias ID = Swift.String?
 }
-@_inheritsConvenienceInitializers @objc(LocationEntityOld) public class LocationEntityOld : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
-extension KoolingSDK.LocationEntityOld {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<KoolingSDK.LocationEntityOld>
-  @objc @NSManaged dynamic public var accuracy: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var altitude: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var bluetooth: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var coarse: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var distance: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var id: Foundation.UUID? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var isSubmitted: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var latitude: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var longitude: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var motiontype: Swift.Int16 {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var speed: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var steps: Swift.Int32 {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
-    @objc get
-    @objc set
-  }
-}
-extension KoolingSDK.LocationEntityOld : Swift.Identifiable {
-  public typealias ID = Foundation.UUID?
-}
-extension KoolingSDK.MotionActivity.ActivityType : Swift.Equatable {}
-extension KoolingSDK.MotionActivity.ActivityType : Swift.Hashable {}
-extension KoolingSDK.MotionActivity.ActivityType : Swift.RawRepresentable {}
-extension KoolingSDK.RealmActor : _Concurrency.GlobalActor {}
-extension KoolingSDK.QuantityType : Swift.Equatable {}
-extension KoolingSDK.QuantityType : Swift.Hashable {}
-extension KoolingSDK.ActivityTypeEntity : Swift.Equatable {}
-extension KoolingSDK.ActivityTypeEntity : Swift.Hashable {}
-extension KoolingSDK.ActivityTypeEntity : Swift.RawRepresentable {}
-extension KoolingSDK.EncoderType : Swift.Equatable {}
-extension KoolingSDK.EncoderType : Swift.Hashable {}
-extension KoolingSDK.HttpMethod : Swift.Equatable {}
-extension KoolingSDK.HttpMethod : Swift.Hashable {}
-extension KoolingSDK.ActivityType : Swift.Equatable {}
-extension KoolingSDK.ActivityType : Swift.Hashable {}
-extension KoolingSDK.RegionOffsetIdentifier : Swift.Equatable {}
-extension KoolingSDK.RegionOffsetIdentifier : Swift.Hashable {}
-extension KoolingSDK.RegionOffsetIdentifier : Swift.RawRepresentable {}
+extension KoolingSDK.KoolingEnvironment : Swift.Equatable {}
+extension KoolingSDK.KoolingEnvironment : Swift.Hashable {}
+extension KoolingSDK.KoolingHttpMethod : Swift.Equatable {}
+extension KoolingSDK.KoolingHttpMethod : Swift.Hashable {}
+extension KoolingSDK.KoolingEncoderType : Swift.Equatable {}
+extension KoolingSDK.KoolingEncoderType : Swift.Hashable {}
