@@ -16,32 +16,15 @@ Add KoolingSDK to your project using Swift Package Manager:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Kooling-Tech/SDK_iOS", from: "1.0.0")
+    .package(url: "https://github.com/shinnguyen5589/KoolingSDK.git", from: "1.0.4")
 ]
 ```
 
 Or add it directly in Xcode:
 1. File → Add Package Dependencies
-2. Enter URL: `https://github.com/Kooling-Tech/SDK_iOS`
-3. Select version: `1.0.0` or later
+2. Enter URL: `https://github.com/shinnguyen5589/KoolingSDK.git`
+3. Select version: `1.0.4` or later
 4. Add to your target
-
-## 🏗️ Xcode Project Setup
-
-### Add KoolingSDK to Frameworks, Libraries, and Embedded Content
-
-1. Open your project in Xcode.
-2. Select your main app target (e.g., **Kooling**).
-3. Go to the **General** tab.
-4. Scroll down to **Frameworks, Libraries, and Embedded Content**.
-5. If **KoolingSDK** is not listed, click the **+** button and add **KoolingSDK**.
-6. If your app uses **Alamofire** (and it is not already listed), add **Alamofire** as well. If you already include Alamofire separately in your app, you do not need to add it again from the SDK.
-
-> **Note:**
-> - If you integrate KoolingSDK via Swift Package Manager, Xcode will usually add KoolingSDK automatically. However, always double-check to ensure it is present.
-> - If your app already uses Alamofire independently, you do not need to add it again from KoolingSDK.
-
----
 
 ## 🔧 Setup
 
@@ -204,13 +187,8 @@ import KoolingSDK
 class TrackingViewController: UIViewController {
     
     @IBAction func startTrackingTapped(_ sender: UIButton) {
-        guard let token = UserDefaults.standard.string(forKey: "accessToken") else {
-            showAlert("Please login first")
-            return
-        }
-        
         KoolingSDKManager.shared.startTracking(
-            token: token,
+            token: "REPLACE_ME_WITH_PROVIDED_DEMO_TOKEN",
             viewController: self
         ) {
             sender.setTitle("Stop Tracking", for: .normal)
@@ -225,60 +203,333 @@ class TrackingViewController: UIViewController {
 }
 ```
 
-### Network Requests
+### Building Your API Layer
+
+The SDK provides a clean architecture for making API calls. Here's how to structure your API classes following the same pattern used in the main app:
+
+#### Network Client Helper
+
+Create a helper function to build your network client with proper configuration:
 
 ```swift
+import Foundation
+import KoolingSDK
+import Alamofire
+
+func buildNetworkClient() -> KoolingNetworkClient {
+    // Configure JSON encoding/decoding with snake_case conversion
+    let jsonEncoder = JSONEncoder()
+    jsonEncoder.keyEncodingStrategy = .convertToSnakeCase
+
+    let jsonDecoder = JSONDecoder()
+    jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+
+    // Configure query parameters encoding
+    let queryParameters = URLEncodedFormParameterEncoder(
+        encoder: URLEncodedFormEncoder(
+            arrayEncoding: .noBrackets,
+            boolEncoding: .literal,
+            keyEncoding: .convertToSnakeCase
+        ),
+        destination: .queryString
+    )
+
+    // Create and return the network client
+    return KoolingNetworkClientImplementation(
+        baseUrlString: KoolingSDKManager.shared.baseUrlString,
+        eventMonitors: [UnauthorisedUserEventMonitor()],
+        jsonEncoder: jsonEncoder,
+        jsonDecoder: jsonDecoder,
+        parameterEncoder: queryParameters
+    )
+}
+```
+
+**What this does:**
+- **JSON Encoding**: Converts Swift camelCase to snake_case for API requests
+- **JSON Decoding**: Converts API snake_case responses to Swift camelCase
+- **Query Parameters**: Properly encodes URL query parameters
+- **Base URL**: Uses the configured environment (staging/production)
+- **Event Monitors**: Handles unauthorized access automatically
+
+> **Note**: You'll need to create an `UnauthorisedUserEventMonitor` class to handle 401 responses. This can be as simple as navigating to your login screen when authentication fails.
+
+#### TripsApi Class
+
+Create a class to handle all trip-related API calls:
+
+```swift
+import Foundation
 import KoolingSDK
 
-class TripService {
-    private let networkClient: KoolingNetworkClient
-    
-    init() {
-        // Use the helper function to create network client
-        self.networkClient = buildNetworkClient()
+class TripsApi {
+    // Define your API endpoints
+    private let path = "/ios/trips"
+    private func path(_ tripId: String) -> String {
+        "\(path)/\(tripId)"
     }
-    
-    func fetchTrips() async throws -> [Trip] {
-        let request = KoolingNetworkRequest(
-            endpoint: "/trips",
-            method: .get,
-            parameters: EmptyParameters()
-        )
-        
-        return try await networkClient.sendAuthenticated(request)
+
+    // Use the SDK's network client
+    private let networkClient: KoolingNetworkClient = buildNetworkClient()
+
+    // Define query parameters for filtering and pagination
+    struct Query: Encodable {
+        private(set) var transportationmode: Int? = nil    // Filter by transport mode (1=car, 2=bus, etc.)
+        private(set) var vehicletype: String? = nil        // Filter by vehicle type (car, motorcycle, etc.)
+        private(set) var fueltype: String? = nil           // Filter by fuel type (petrol, diesel, electric, etc.)
+        private(set) var week: Int? = nil                  // Filter by week number (1-52)
+        private(set) var month: Int? = nil                 // Filter by month (1-12)
+        private(set) var year: Int? = nil                  // Filter by year (e.g., 2024)
+        private(set) var perPage: Int? = nil               // Number of items per page for pagination
+        private(set) var cursor: String? = nil             // Cursor for pagination (next page token)
     }
-    
-    func createTrip(tripData: TripData) async throws -> Trip {
-        let request = KoolingNetworkRequest(
-            endpoint: "/trips",
-            method: .post,
-            parameters: tripData
+
+    // Get paginated list of trips with filtering options
+    // Returns: PagedResponse<TripPreview> with trips data and pagination info
+    func getTrips(query: Query) async throws -> PagedResponse<TripPreview> {
+        try await networkClient.sendAuthenticated(
+            KoolingNetworkRequest(
+                endpoint: path,
+                method: .get,
+                parameters: query
+            )
         )
-        
-        return try await networkClient.sendAuthenticated(request)
+    }
+
+    // Get detailed information about a specific trip
+    // Parameters: tripId - The unique identifier of the trip
+    // Returns: Response<Trip> with complete trip details
+    func getTrip(tripId: String) async throws -> Response<Trip> {
+        try await networkClient.sendAuthenticated(
+            KoolingNetworkRequest(
+                endpoint: path(tripId),
+                method: .get,
+                parameters: Optional<String>.none
+            )
+        )
+    }
+
+    // Data structure for updating trip information
+    struct UpdateTrip : Encodable {
+        let transportationmode: Int    // Transport mode (1=car, 2=bus, etc.)
+        let fueltype: String?          // Fuel type (petrol, diesel, electric, etc.)
+    }
+
+    // Update trip details (transport mode and fuel type)
+    // Parameters: tripId - Trip to update, body - New trip data
+    // Returns: Response<Trip> with updated trip information
+    func updateTrip(tripId: String, body: UpdateTrip) async throws -> Response<Trip> {
+        try await networkClient.sendAuthenticated(
+            KoolingNetworkRequest(
+                endpoint: path(tripId),
+                method: .put,
+                parameters: body
+            )
+        )
     }
 }
 
-// Custom token provider example
-class CustomTokenProvider: TokenProvider {
-    func get() -> String? {
-        // Return token from your authentication system
-        return UserDefaults.standard.string(forKey: "custom_access_token")
+// Helper extensions for building queries
+extension TripsApi.Query {
+    init(pageSize: Int) {
+        perPage = pageSize
+    }
+
+    func filter(by vehicle: Vehicle) -> TripsApi.Query {
+        var other = self
+        other.transportationmode = vehicle.transportationmode <= 0 ? nil : vehicle.transportationmode
+        other.fueltype = vehicle.fueltype.isEmpty ? nil : vehicle.fueltype
+        return other
+    }
+
+    func filter(week: Int? = nil, month: Int? = nil, year: Int? = nil) -> TripsApi.Query {
+        var other = self
+        other.year = year
+        other.month = month
+        other.week = week
+        return other
+    }
+
+    func with(cursor: String?) -> TripsApi.Query {
+        var other = self
+        other.cursor = cursor
+        return other
     }
 }
-
-// Use custom token provider
-let customClient = KoolingNetworkClientImplementation(
-    baseUrlString: KoolingSDKManager.shared.baseUrlString,
-    tokenProvider: CustomTokenProvider()
-)
 ```
+
+#### StatisticsApi Class
+
+Create a class to handle statistics API calls:
+
+```swift
+import Foundation
+import KoolingSDK
+
+class StatisticsApi {
+    private func path(_ path: String) -> String {
+        "/ios/statistics/\(path)"
+    }
+
+    private let networkClient: KoolingNetworkClient = buildNetworkClient()
+
+    // Get general statistics for different time periods
+    // Parameters: filter - .month (current month), .year (current year), .all (all time)
+    // Returns: Response<[GeneralStatistics]> with aggregated statistics
+    func getGeneralStatistics(for filter: GeneralStatistics.Filter) async throws -> Response<[GeneralStatistics]> {
+        struct Query: Encodable {
+            let year: Int?    // Year for filtering (e.g., 2024)
+            let month: Int?   // Month for filtering (1-12)
+        }
+
+        // Get current date components for automatic filtering
+        let componentes = Calendar.shared.dateComponents([.year, .month, .weekOfYear], from: Date.now)
+        let query = switch filter {
+        case .month:
+            Query(year: componentes.year, month: componentes.month)  // Current month
+        case .year:
+            Query(year: componentes.year, month: nil)                 // Current year
+        case .all:
+            Query(year: nil, month: nil)                              // All time
+        }
+
+        return try await networkClient.sendAuthenticated(
+            KoolingNetworkRequest(
+                endpoint: path("general"),
+                method: .get,
+                parameters: query
+            )
+        )
+    }
+
+    // Get yearly statistics with detailed breakdown
+    // Parameters: year - The year to get statistics for
+    // Returns: Response<[DistanceTimeStatistics]> with yearly data
+    func getStatistics(year: Int) async throws -> Response<[DistanceTimeStatistics]> {
+        try await getStatistics(path: path("trips-by-year/\(year)"))
+    }
+
+    // Get monthly statistics for a specific year
+    // Parameters: year - The year, month - The month (1-12)
+    // Returns: Response<[DistanceTimeStatistics]> with monthly data
+    func getStatistics(year: Int, month: Int) async throws -> Response<[DistanceTimeStatistics]> {
+        try await getStatistics(path: path("trips-by-month/\(year)/\(month)"))
+    }
+
+    // Get weekly statistics for a specific year
+    // Parameters: year - The year, week - The week number (1-52)
+    // Returns: Response<[DistanceTimeStatistics]> with weekly data
+    func getStatistics(year: Int, week: Int) async throws -> Response<[DistanceTimeStatistics]> {
+        try await getStatistics(path: path("trips-by-week/\(year)/\(week)"))
+    }
+
+    // Private helper method to avoid code duplication
+    // Generic method that handles the actual API call for all statistics endpoints
+    private func getStatistics<T: Decodable>(path: String) async throws -> Response<[T]> {
+        try await networkClient.sendAuthenticated(
+            KoolingNetworkRequest(
+                endpoint: path,
+                method: .get,
+                parameters: Optional<String>.none
+            )
+        )
+    }
+}
+```
+
+#### KoolingApi Class
+
+Create a class to handle user profile and authentication:
+
+```swift
+import Foundation
+import KoolingSDK
+
+class KoolingApi {
+    private let networkClient: KoolingNetworkClient = buildNetworkClient()
+
+    // Authenticate user with email and password
+    // Parameters: data - LoginRequestModel with email and password
+    // Returns: LoginResponse with access token and user info
+    // Note: This endpoint doesn't require authentication
+    func login(data: LoginRequestModel) async throws -> LoginResponse {
+        try await networkClient.send(
+            KoolingNetworkRequest(
+                endpoint: "/login",
+                method: .post,
+                parameters: data
+            )
+        )
+    }
+
+    // Get current user's profile information
+    // Returns: Response<User> with user details (name, email, settings, etc.)
+    // Note: Requires valid authentication token
+    func profile() async throws -> Response<User> {
+        try await networkClient.sendAuthenticated(
+            KoolingNetworkRequest(
+                endpoint: "/profile",
+                method: .get,
+                parameters: Optional<String>.none
+            )
+        )
+    }
+
+    // Enable or disable enhanced tracking mode
+    // Parameters: enabled - true to enable enhanced mode, false to disable
+    // Returns: Response<User> with updated user profile
+    // Note: Enhanced mode provides more detailed tracking data
+    func setEnhanceMode(enabled: Bool) async throws -> Response<User> {
+        struct User: Encodable {
+            struct Account: Encodable {
+                let isEnhance: Bool    // Enhanced tracking setting
+            }
+
+            let account: Account
+            init(enabled: Bool) {
+                account = Account(isEnhance: enabled)
+            }
+        }
+
+        return try await networkClient.sendAuthenticated(
+            KoolingNetworkRequest(
+                endpoint: "/profile",
+                method: .put,
+                parameters: User(enabled: enabled)
+            )
+        )
+    }
+
+    // Get list of user's connected Bluetooth devices
+    // Returns: Response<[BlueTooth]> with device information
+    // Note: Used for enhanced tracking with external sensors
+    func bluetooth() async throws -> Response<[BlueTooth]> {
+        try await networkClient.sendAuthenticated(
+            KoolingNetworkRequest(
+                endpoint: "/bluetooth",
+                method: .get,
+                parameters: Optional<String>.none
+            )
+        )
+    }
+}
+```
+
+### Key Points to Remember
+
+1. **Always use `buildNetworkClient()`** - This creates a properly configured network client with JSON encoding/decoding and proper error handling
+2. **Use `sendAuthenticated()`** for protected endpoints that require user authentication
+3. **Use `send()`** for public endpoints like login
+4. **Handle errors properly** with try-catch blocks
+5. **Use the Query structs** for filtering and pagination
+6. **Follow the same pattern** for consistency across your app
+7. **Create UnauthorisedUserEventMonitor** to handle 401 responses gracefully
 
 ### Error Handling
 
 ```swift
 do {
-    let trips = try await tripService.fetchTrips()
+    let trips = try await tripsApi.getTrips(querry: querry)
     // Handle success
 } catch let error as KoolingNetworkError {
     switch error {
@@ -390,3 +641,4 @@ KoolingSDKManager.shared.setupLog { level, message in
 Proprietary software. See your license agreement for terms of use.
 
 ---
+
