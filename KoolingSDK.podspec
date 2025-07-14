@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "KoolingSDK"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "A lightweight iOS SDK for location tracking and activity monitoring"
   spec.description  = <<-DESC
                       KoolingSDK is a lightweight iOS SDK for location tracking and activity monitoring. 
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Shin Nguyen" => "shinnguyen5589@gmail.com" }
   spec.platform     = :ios, "15.0"
-  spec.source       = { :git => "https://github.com/shinnguyen5589/KoolingSDK.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/shinnguyen5589/KoolingSDK.git", :tag => "1.0.5" }
 
   spec.vendored_frameworks = [
     "Sources/KoolingSDK.xcframework",
